@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Documentation - Ashoka - A Responsive Minimal Multipurpose Theme.</title>
+    <meta name="description" content="Ashoka - A Responsive Minimal Multipurpose Theme." />
+    <meta name="keywords" content="Ashoka, flat, responsive, one page, parallax, portfolio, bootstrap, bootstrap3 , html5 template" />
+    <meta name="author" content="GeeksLbas" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- jQuery -->
+    <script src="js/vendor/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/vendor/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    
+    <!-- google fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900%7CMerriweather:400,400italic,300,300italic,700,700italic' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" type="text/css" href="css/vendor/bootstrap.css">
+    <link rel="stylesheet" href="css/vendor/elegant-font-icon.css">
+    <!-- jQuery Plugin CSS -->
+    <link rel="stylesheet" type="text/css" href="http://syntaxhighlight.in/shi/css/shi_default.min.css"/>
+    <script src="http://syntaxhighlight.in/shi/js/shi_jquery.min.js" type="text/javascript" charset="utf-8"></script>
+      
+    <style type="text/css">
+      .doc-post {
+      text-align: left;
+      padding: 30px;
+      }
+      .jumbotron{
+      text-align: center;
+      margin-top: 30px;
+      }
+      .welcome-text{
+      font-size: 1.5em;
+      }
+      .blog-doc{
+      padding: 40px 0 40px 0;
+      }
+      .blog-doc .hr-circle{
+      padding: 20px 0px;
+      }
+      .navbar-default{
+      background-color: #ffffff;
+      border-color: #DADADA;
+      }
+      .doc-type-circle {
+      width: 100px;
+      height: 100px;
+      background-color: #48CFAD;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      margin: 0 auto;
+      position: relative;
+      margin-top: -50px;
+      }
+      .doc-type-circle i{
+      color: #fff;
+      line-height: 80px;
+      font-size: 2.5em;
+      }
+      .doc-img{
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      border-radius: 20px;
+      }
+      .doc-content{
+      padding: 20px 0px;
+      }
+      .snippet-num,code,pre{
+      font-family: monospace;
+      }
+      h3{
+      font-size: 1.4em;
+      }
+      .list2{
+      list-style-type: none;
+      }
+    </style>
+      
+    </head>
+    <body>
+      <!-- Start Navbar -->
+      <div class="navbar navbar-default navbar-fixed-top">
+        <!-- Fixed  Navbar -->
+        <div class="nav-container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" name="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <p><a class="navbar-brand" data-scroll href="#home">ASHOKA</a></p>
+          </div>
+          <div class="navbar-collapse collapse pull-right">
+            <ul class="nav navbar-nav">
+              <li><a data-scroll href="#welcome">Home</a></li>
+              <li><a data-scroll href="#using-theme">Using Theme</a></li>
+              <li><a data-scroll href="#html-stracture">HTML Structure</a></li>
+              <li><a data-scroll href="#css-stracture">CSS Structure</a></li>
+              <li><a data-scroll href="#js-settings">Javascript Settings</a></li>
+              <li><a data-scroll href="#shortcodes">Shortcodes</a></li>
+              <li><a data-scroll href="#credits">Credits</a></li>
+            </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </div>
+        <!-- End Navbar -->
+        <section id="welcome" class="clearfix">
+          <div class="row-fluid content container">
+            <div class="col-md-12">
+              <div class="jumbotron">
+                <a data-scroll href="#home"><img src="ashoka-responsive-minimal-multipurpose-theme-590x300.jpg" class="img-responsive" style="display: inline;text-align: center;" alt="Ashoka Logo Big"></a>
+                <h3 class="welcome-text">Welcome To Ashoka Theme Documentation</h3>
+                <p>Thank you for purchasing our theme. If you have any questions that are beyond the scope of this help file, please feel free to create a support thread on our support forum. Thanks so much!</p>
+                <a href="https://themeselection.com/demo/ashoka-html-template/" class="btn btn-primary btn-lg" target="_blank"><i class="icon_desktop"></i>
+                  Live Demo
+                </a>
+                <a href="http://themeforest.net/item/ashoka-responsive-minimal-multipurpose-theme/8296581?ref=geekslabs" class="btn btn-primary btn-lg" target="_blank"><i class="icon_cart" ></i>
+                  Purchase Now
+                </a>
+                <a href="http://geekslabs.com/contact/" class="btn btn-primary btn-lg" target="_blank"><i class="icon_mail_alt"></i>
+                  Contact Us
+                </a>
+                
+              </div>
+              
+              <div id="welcome" class="doc-post ">
+                <h2 class="doc-heading">Ashoka - A Responsive Minimal Multipurpose Theme</h2>
+                <hr>
+                <h3 class="post-info"><i class="icon_desktop"></i> Ashoka v1.0 / <i class="icon_calendar"></i> July 2 2014</h3>
+                <div class="row doc-content">
+                  <div class="col-md-6">
+                      <p>Ashoka is a responsive minimal multipurpose one page theme built using 
+                      latest Bootstrap v3.1.1  and HTML5/CSS3 features and suitable for 
+                      creative agencies and any kind of freelancers, photographers or small business which need a fast way to showcase their work.</p>
+
+                      <p>Full screen video background, menu and portfolio make this theme very uniqu and lavish.</p>
+
+                      <p>Ashoka is a fully responsive and retina ready so it works nicely on smartphones, tablet PCs and desktops.</p>
+                  </div>
+                  <div class="col-md-6">
+                    <ul class="list2">
+                      <li><i class="arrow_carrot-right_alt2"></i> HTML5 &amp; CSS3</li>
+                      <li><i class="arrow_carrot-right_alt2"></i> Ultra Responsive Design</li>
+                      <li><i class="arrow_carrot-right_alt2"></i> Bootstrap v3.1.1</li>
+                      <li><i class="arrow_carrot-right_alt2"></i> Full Screen Video Background</li>
+                      <li><i class="arrow_carrot-right_alt2"></i> Awesome parallax effects</li>
+                      <li><i class="arrow_carrot-right_alt2"></i> Retina Ready</li>
+                      <li><i class="arrow_carrot-right_alt2"></i> 15 Color Skins</li>
+                      <li><i class="arrow_carrot-right_alt2"></i> Ajax Contact Form</li>
+                      <li><i class="arrow_carrot-right_alt2"></i> Pricing Tables</li>
+                      <li><i class="arrow_carrot-right_alt2"></i> Browser Compatibility</li>
+                      <li><i class="arrow_carrot-right_alt2"></i> Clean Code</li>
+                    </ul>
+                  </div>                  
+                </div>
+                <hr>
+                <div id="using-theme" class="doc-post ">
+                  <h2 class="doc-heading">Using Theme</h2>
+                  <div class="doc-content">
+                    <p><i class="arrow_carrot-right_alt2"></i> After unzip Theme Files, you will found HTML Folder have 2 Theme styles Full screen background image and background slider.</p>
+                    <p><i class="arrow_carrot-right_alt2"></i> You can view this Theme in any web browser from your desktop computer. Because the files are written in HTML, you do not need an internet connection in order to display or edit the Theme.</p>
+                    <p><i class="arrow_carrot-right_alt2"></i> Open index.html file, left hend side you can see floating setting icon. Click on it will open option panel. You can customize theme color & style from there.</p>
+                    <p><i class="arrow_carrot-right_alt2"></i> Start your FTP client (I persoanlly use Filezila which is free) and login. Login to your server. You will need your server name (often times this will be your domain name), username, and password that you setup with the hosting company.</p>
+                    <p><i class="arrow_carrot-right_alt2"></i> Start your FTP client (I persoanlly use Filezila which is free) and login. Login to your server. You will need your server name (often times this will be your domain name), username, and password that you setup with the hosting company.</p>
+                    <p><i class="arrow_carrot-right_alt2"></i> Locate the domain folder you wish to upload your Theme files to on your server. You are going to want to click and drag every file that you have labeled .html, .css, .js into your FTP client.</p>
+                    <p><i class="arrow_carrot-right_alt2"></i> Once the files are done uploading, rename the file you want to be your home page as 'index.html'.</p>
+                  </div>
+                </div>
+                <hr>
+                <div id="html-stracture" class="doc-post ">
+                  <h2 class="doc-heading">GRID STRACTURE</h2>
+                  <div class="doc-content">
+                    <p><i class="arrow_carrot-right_alt2"></i> This Theme has a Responsive layout with a variation of column layouts depending on the page. This theme uses Bootstrap 3 Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
+                    <h3 id="grid-options">Grid options</h3>
+                    <a href="http://getbootstrap.com/css/#grid-options" target="_blank">more info...</a>
+                    <div class="table-responsive">
+                      <table class="table table-bordered table-striped">
+                        <thead>
+                          <tr>
+                            <th></th>
+                            <th>
+                              Extra small devices
+                              <small>Phones (&lt;768px)</small>
+                            </th>
+                            <th>
+                              Small devices
+                              <small>Tablets (≥768px)</small>
+                            </th>
+                            <th>
+                              Medium devices
+                              <small>Desktops (≥992px)</small>
+                            </th>
+                            <th>
+                              Large devices
+                              <small>Desktops (≥1200px)</small>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th>Grid behavior</th>
+                            <td>Horizontal at all times</td>
+                            <td colspan="3">Collapsed to start, horizontal above breakpoints</td>
+                          </tr>
+                          <tr>
+                            <th>Max container width</th>
+                            <td>None (auto)</td>
+                            <td>750px</td>
+                            <td>970px</td>
+                            <td>1170px</td>
+                          </tr>
+                          <tr>
+                            <th>Class prefix</th>
+                            <td><code>.col-xs-</code></td>
+                            <td><code>.col-sm-</code></td>
+                            <td><code>.col-md-</code></td>
+                            <td><code>.col-lg-</code></td>
+                          </tr>
+                          <tr>
+                            <th># of columns</th>
+                            <td colspan="4">12</td>
+                          </tr>
+                          <tr>
+                            <th>Max column width</th>
+                            <td class="text-muted">Auto</td>
+                            <td>60px</td>
+                            <td>78px</td>
+                            <td>95px</td>
+                          </tr>
+                          <tr>
+                            <th>Gutter width</th>
+                            <td colspan="4">30px (15px on each side of a column)</td>
+                          </tr>
+                          <tr>
+                            <th>Nestable</th>
+                            <td colspan="4">Yes</td>
+                          </tr>
+                          <tr>
+                            <th>Offsets</th>
+                            <td colspan="1" class="text-muted">N/A</td>
+                            <td colspan="3">Yes</td>
+                          </tr>
+                          <tr>
+                            <th>Column ordering</th>
+                            <td class="text-muted">N/A</td>
+                            <td colspan="3">Yes</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p>Using a single set of <code>.col-md-*</code> grid classes, you can create a basic grid system that starts out stacked on mobile devices and tablet devices (the extra small to small range) before becoming horizontal on desktop (medium) devices.</p>
+                    <div class="snippet-container"><div class="sh_default snippet-wrap"><div class="snippet-menu sh_sourceCode"><a class="snippet-window sh_url" data-scroll href="#">pop-up</a><a class="snippet-text sh_url" data-scroll href="#">text</a></div><pre class="shi_pre sh_html snippet-formatted sh_sourceCode"><ol class="snippet-num"><li><span class="sh_keyword">&lt;div</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"row"</span><span class="sh_keyword">&gt;</span></li><li>  <span class="sh_keyword">&lt;div</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"col-md-1"</span><span class="sh_keyword">&gt;</span>.col-md-1<span class="sh_keyword">&lt;/div&gt;</span></li><li>  <span class="sh_keyword">&lt;div</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"col-md-1"</span><span class="sh_keyword">&gt;</span>.col-md-1<span class="sh_keyword">&lt;/div&gt;</span></li><li>  <span class="sh_keyword">&lt;div</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"col-md-1"</span><span class="sh_keyword">&gt;</span>.col-md-1<span class="sh_keyword">&lt;/div&gt;</span></li><li>  <span class="sh_keyword">&lt;div</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"col-md-1"</span><span class="sh_keyword">&gt;</span>.col-md-1<span class="sh_keyword">&lt;/div&gt;</span></li><li>  <span class="sh_keyword">&lt;div</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"col-md-1"</span><span class="sh_keyword">&gt;</span>.col-md-1<span class="sh_keyword">&lt;/div&gt;</span></li><li>  <span class="sh_keyword">&lt;div</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"col-md-1"</span><span class="sh_keyword">&gt;</span>.col-md-1<span class="sh_keyword">&lt;/div&gt;</span></li><li>  <span class="sh_keyword">&lt;div</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"col-md-1"</span><span class="sh_keyword">&gt;</span>.col-md-1<span class="sh_keyword">&lt;/div&gt;</span></li><li>  <span class="sh_keyword">&lt;div</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"col-md-1"</span><span class="sh_keyword">&gt;</span>.col-md-1<span class="sh_keyword">&lt;/div&gt;</span></li><li>  <span class="sh_keyword">&lt;div</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"col-md-1"</span><span class="sh_keyword">&gt;</span>.col-md-1<span class="sh_keyword">&lt;/div&gt;</span></li><li>  <span class="sh_keyword">&lt;div</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"col-md-1"</span><span class="sh_keyword">&gt;</span>.col-md-1<span class="sh_keyword">&lt;/div&gt;</span></li><li>  <span class="sh_keyword">&lt;div</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"col-md-1"</span><span class="sh_keyword">&gt;</span>.col-md-1<span class="sh_keyword">&lt;/div&gt;</span></li><li>  <span class="sh_keyword">&lt;div</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"col-md-1"</span><span class="sh_keyword">&gt;</span>.col-md-1<span class="sh_keyword">&lt;/div&gt;</span></li><li><span class="sh_keyword">&lt;/div&gt;</span></li><li><span class="sh_keyword">&lt;div</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"row"</span><span class="sh_keyword">&gt;</span></li><li>  <span class="sh_keyword">&lt;div</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"col-md-8"</span><span class="sh_keyword">&gt;</span>.col-md-8<span class="sh_keyword">&lt;/div&gt;</span></li><li>  <span class="sh_keyword">&lt;div</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"col-md-4"</span><span class="sh_keyword">&gt;</span>.col-md-4<span class="sh_keyword">&lt;/div&gt;</span></li><li><span class="sh_keyword">&lt;/div&gt;</span></li><li><span class="sh_keyword">&lt;div</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"row"</span><span class="sh_keyword">&gt;</span></li><li>  <span class="sh_keyword">&lt;div</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"col-md-4"</span><span class="sh_keyword">&gt;</span>.col-md-4<span class="sh_keyword">&lt;/div&gt;</span></li><li>  <span class="sh_keyword">&lt;div</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"col-md-4"</span><span class="sh_keyword">&gt;</span>.col-md-4<span class="sh_keyword">&lt;/div&gt;</span></li><li>  <span class="sh_keyword">&lt;div</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"col-md-4"</span><span class="sh_keyword">&gt;</span>.col-md-4<span class="sh_keyword">&lt;/div&gt;</span></li><li><span class="sh_keyword">&lt;/div&gt;</span></li><li><span class="sh_keyword">&lt;div</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"row"</span><span class="sh_keyword">&gt;</span></li><li>  <span class="sh_keyword">&lt;div</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"col-md-6"</span><span class="sh_keyword">&gt;</span>.col-md-6<span class="sh_keyword">&lt;/div&gt;</span></li><li>  <span class="sh_keyword">&lt;div</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"col-md-6"</span><span class="sh_keyword">&gt;</span>.col-md-6<span class="sh_keyword">&lt;/div&gt;</span></li><li><span class="sh_keyword">&lt;/div&gt;</span></li></ol></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;" tabindex="0" contenteditable="">&lt;div class="row"&gt;
+                    &lt;div class="col-md-1"&gt;.col-md-1&lt;/div&gt;
+                    &lt;div class="col-md-1"&gt;.col-md-1&lt;/div&gt;
+                    &lt;div class="col-md-1"&gt;.col-md-1&lt;/div&gt;
+                    &lt;div class="col-md-1"&gt;.col-md-1&lt;/div&gt;
+                    &lt;div class="col-md-1"&gt;.col-md-1&lt;/div&gt;
+                    &lt;div class="col-md-1"&gt;.col-md-1&lt;/div&gt;
+                    &lt;div class="col-md-1"&gt;.col-md-1&lt;/div&gt;
+                    &lt;div class="col-md-1"&gt;.col-md-1&lt;/div&gt;
+                    &lt;div class="col-md-1"&gt;.col-md-1&lt;/div&gt;
+                    &lt;div class="col-md-1"&gt;.col-md-1&lt;/div&gt;
+                    &lt;div class="col-md-1"&gt;.col-md-1&lt;/div&gt;
+                    &lt;div class="col-md-1"&gt;.col-md-1&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="row"&gt;
+                    &lt;div class="col-md-8"&gt;.col-md-8&lt;/div&gt;
+                    &lt;div class="col-md-4"&gt;.col-md-4&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="row"&gt;
+                    &lt;div class="col-md-4"&gt;.col-md-4&lt;/div&gt;
+                    &lt;div class="col-md-4"&gt;.col-md-4&lt;/div&gt;
+                    &lt;div class="col-md-4"&gt;.col-md-4&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="row"&gt;
+                    &lt;div class="col-md-6"&gt;.col-md-6&lt;/div&gt;
+                    &lt;div class="col-md-6"&gt;.col-md-6&lt;/div&gt;
+                  &lt;/div&gt;</pre></div></div>
+                  <h3>Theme HTML Structure</h3>
+                  <div class="snippet-container"><div class="sh_default snippet-wrap"><div class="snippet-menu sh_sourceCode"><a class="snippet-window sh_url" href="#">pop-up</a><a class="snippet-text sh_url" href="#">text</a></div><pre class="shi_pre sh_html snippet-formatted sh_sourceCode"><ol class="snippet-num"><li><span class="sh_comment">&lt;!-- about --&gt;</span></li><li>        <span class="sh_keyword">&lt;section</span> <span class="sh_type">id</span><span class="sh_symbol">=</span><span class="sh_string">"about"</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"row section"</span><span class="sh_keyword">&gt;</span></li><li>          <span class="sh_keyword">&lt;div</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"row"</span><span class="sh_keyword">&gt;</span></li><li>            <span class="sh_keyword">&lt;h2</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"section-title text-center"</span><span class="sh_keyword">&gt;</span></li><li>              <span class="sh_keyword">&lt;span</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"section-title-border wow pulse"</span> <span class="sh_type">data-wow-duration</span><span class="sh_symbol">=</span><span class="sh_string">"1s"</span> <span class="sh_type">data-wow-delay</span><span class="sh_symbol">=</span><span class="sh_string">"1s"</span><span class="sh_keyword">&gt;</span>ABOUT<span class="sh_keyword">&lt;/span&gt;</span></li><li>            <span class="sh_keyword">&lt;/h2&gt;</span></li><li>            <span class="sh_keyword">&lt;h3</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"section-info col-md-10 col-md-offset-1 text-center wow fadeInDown"</span><span class="sh_keyword">&gt;</span>We create stunning identities for our clients that people fall in love with. <span class="sh_keyword">&lt;br&gt;</span>We'll work hard until you can't say <span class="sh_keyword">&lt;strong&gt;</span>"WOW!"<span class="sh_keyword">&lt;/strong&gt;</span>.<span class="sh_keyword">&lt;/h3&gt;</span></li><li>          <span class="sh_keyword">&lt;/div&gt;</span></li><li></li><li>          <span class="sh_keyword">&lt;div</span> <span class="sh_type">id</span><span class="sh_symbol">=</span><span class="sh_string">"about-listing"</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"row"</span><span class="sh_keyword">&gt;</span></li><li>            <span class="sh_keyword">&lt;div</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"col-lg-4 col-md-4 col-sm-12 col-xs-12 listing-wrapper wow fadeInLeft animated"</span> <span class="sh_type">data-wow-delay</span><span class="sh_symbol">=</span><span class="sh_string">"0.5s"</span><span class="sh_keyword">&gt;</span></li><li>              <span class="sh_keyword">&lt;div</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"post-list post-thinkers"</span><span class="sh_keyword">&gt;</span></li><li>                <span class="sh_keyword">&lt;h2</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"single-title"</span><span class="sh_keyword">&gt;&lt;i</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"icon_lightbulb_alt"</span><span class="sh_keyword">&gt;&lt;/i&gt;</span> THINKERS.<span class="sh_keyword">&lt;/h2&gt;</span></li><li>                <span class="sh_keyword">&lt;p&gt;</span>Pecorino rubber cheese cheese triangles. Cheesy grin halloumi port-salut cheesy feet the big cheese cauliflower cheese smelly cheese smelly cheese.<span class="sh_keyword">&lt;/p&gt;</span></li><li>                <span class="sh_keyword">&lt;/div&gt;</span></li><li>            <span class="sh_keyword">&lt;/div&gt;</span></li><li>            </li><li>                 </li><li>            <span class="sh_keyword">&lt;div</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"col-lg-4 col-md-4 col-sm-12 col-xs-12 listing-wrapper wow fadeInLeft animated"</span> <span class="sh_type">data-wow-delay</span><span class="sh_symbol">=</span><span class="sh_string">"1s"</span><span class="sh_keyword">&gt;</span></li><li>              <span class="sh_keyword">&lt;div</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"post-list post-dremers"</span><span class="sh_keyword">&gt;</span></li><li>                <span class="sh_keyword">&lt;h2</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"single-title"</span><span class="sh_keyword">&gt;&lt;i</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"icon_chat_alt"</span><span class="sh_keyword">&gt;&lt;/i&gt;</span> DREAMERS.<span class="sh_keyword">&lt;/h2&gt;</span></li><li>                <span class="sh_keyword">&lt;p&gt;</span>Pecorino rubber cheese cheese triangles. Cheesy grin halloumi port-salut cheesy feet the big cheese cauliflower cheese smelly cheese smelly cheese.<span class="sh_keyword">&lt;/p&gt;</span></li><li>              <span class="sh_keyword">&lt;/div&gt;</span></li><li>            <span class="sh_keyword">&lt;/div&gt;</span></li><li>            </li><li>                 </li><li>            <span class="sh_keyword">&lt;div</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"col-lg-4 col-md-4 col-sm-12 col-xs-12 listing-wrapper wow fadeInLeft animated"</span> <span class="sh_type">data-wow-delay</span><span class="sh_symbol">=</span><span class="sh_string">"1.5s"</span><span class="sh_keyword">&gt;</span></li><li>              <span class="sh_keyword">&lt;div</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"post-list post-researchers"</span><span class="sh_keyword">&gt;</span></li><li>                <span class="sh_keyword">&lt;h2</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"single-title"</span><span class="sh_keyword">&gt;&lt;i</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"icon_piechart"</span><span class="sh_keyword">&gt;&lt;/i&gt;</span> RESEARCHERS.<span class="sh_keyword">&lt;/h2&gt;</span></li><li>                <span class="sh_keyword">&lt;p&gt;</span>Pecorino rubber cheese cheese triangles. Cheesy grin halloumi port-salut cheesy feet the big cheese cauliflower cheese smelly cheese smelly cheese.<span class="sh_keyword">&lt;/p&gt;</span></li><li>              <span class="sh_keyword">&lt;/div&gt;</span></li><li>            <span class="sh_keyword">&lt;/div&gt;</span></li><li>          <span class="sh_keyword">&lt;/div&gt;</span></li><li>        <span class="sh_keyword">&lt;/section&gt;</span> <span class="sh_comment">&lt;!-- /about --&gt;</span></li></ol></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;" tabindex="0" contenteditable="">&lt;!-- about --&gt;
+                  &lt;section id="about" class="row section"&gt;
+                  &lt;div class="row"&gt;
+                  &lt;h2 class="section-title text-center"&gt;
+                  &lt;span class="section-title-border wow pulse" data-wow-duration="1s" data-wow-delay="1s"&gt;ABOUT&lt;/span&gt;
+                  &lt;/h2&gt;
+                  &lt;h3 class="section-info col-md-10 col-md-offset-1 text-center wow fadeInDown"&gt;We create stunning identities for our clients that people fall in love with. &lt;br&gt;We'll work hard until you can't say &lt;strong&gt;"WOW!"&lt;/strong&gt;.&lt;/h3&gt;
+                  &lt;/div&gt;
+                  &lt;div id="about-listing" class="row"&gt;
+                  &lt;div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 listing-wrapper wow fadeInLeft animated" data-wow-delay="0.5s"&gt;
+                  &lt;div class="post-list post-thinkers"&gt;
+                  &lt;h2 class="single-title"&gt;&lt;i class="icon_lightbulb_alt"&gt;&lt;/i&gt; THINKERS.&lt;/h2&gt;
+                  &lt;p&gt;Pecorino rubber cheese cheese triangles. Cheesy grin halloumi port-salut cheesy feet the big cheese cauliflower cheese smelly cheese smelly cheese.&lt;/p&gt;
+                  &lt;/div&gt;
+                  &lt;/div&gt;
+                  
+                  
+                  &lt;div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 listing-wrapper wow fadeInLeft animated" data-wow-delay="1s"&gt;
+                  &lt;div class="post-list post-dremers"&gt;
+                  &lt;h2 class="single-title"&gt;&lt;i class="icon_chat_alt"&gt;&lt;/i&gt; DREAMERS.&lt;/h2&gt;
+                  &lt;p&gt;Pecorino rubber cheese cheese triangles. Cheesy grin halloumi port-salut cheesy feet the big cheese cauliflower cheese smelly cheese smelly cheese.&lt;/p&gt;
+                  &lt;/div&gt;
+                  &lt;/div&gt;
+                  
+                  
+                  &lt;div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 listing-wrapper wow fadeInLeft animated" data-wow-delay="1.5s"&gt;
+                  &lt;div class="post-list post-researchers"&gt;
+                  &lt;h2 class="single-title"&gt;&lt;i class="icon_piechart"&gt;&lt;/i&gt; RESEARCHERS.&lt;/h2&gt;
+                  &lt;p&gt;Pecorino rubber cheese cheese triangles. Cheesy grin halloumi port-salut cheesy feet the big cheese cauliflower cheese smelly cheese smelly cheese.&lt;/p&gt;
+                  &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/section&gt; &lt;!-- /about --&gt;</pre></div></div>
+                <p>Here <code>section</code> id is <code>#about</code> the target for About link in menu, when you click on about in menu it will move you to about section.</p>
+                <p>If you would like to edit the color, or  font, or style of any elements in one of these columns, you would do the following:</p>
+<pre class="css">#about .page-title {color: #someColor;}</pre>
+<br/><br/>
+<h3>Using Font-Icons</h3>
+<br/>
+<p><i class="arrow_carrot-right_alt2"></i>  Font-Icons: This theme used The Elegant Icon Font – 360 Of The Best Free Icons For The Modern Web.</p>
+                <p>Usege : <a href="http://www.elegantthemes.com/blog/resources/elegant-icon-font" target="_blank">http://www.elegantthemes.com/blog/resources/elegant-icon-font</a></p>
+<p>
+<i class="icon_camera_alt"></i>
+<i class="icon_gift_alt"></i>
+<i class="icon_lightbulb_alt"></i>
+<i class="icon_creditcard"></i>
+<i class="icon_mic_alt"></i>
+</p>
+<pre class="css">class="icon_camera_alt"</pre>
+<i class="glyphicon glyphicon-type"></i>
+                <div class="snippet-container"><div class="sh_default snippet-wrap"><div class="snippet-menu sh_sourceCode"><a class="snippet-window sh_url" href="#">pop-up</a><a class="snippet-text sh_url" href="#">text</a></div><pre class="shi_pre sh_html snippet-formatted sh_sourceCode"><ol class="snippet-num"><li><span class="sh_keyword">&lt;span</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"icon_camera_alt"</span><span class="sh_keyword">&gt;&lt;/span&gt;</span></li></ol></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;" tabindex="0" contenteditable="">&lt;span class="icon_camera_alt"&gt;&lt;/span&gt;</pre></div></div>
+              </div>
+            </div>
+<hr>
+            <div id="css-stracture" class="doc-post ">
+<h2 class="doc-heading">CSS Files and Structure</h2>
+              <div class="doc-content">
+<p><i class="arrow_carrot-right_alt2"></i> After unzip the Theme files you can see <code>Ashoka/css</code> folder. That css folder contains color,vendor,pre-load.css & style.css</p>
+
+<p><i class="arrow_carrot-right_alt2"></i> I am using one main CSS file name is <code>style.css</code> in this theme which you are free to modify depending on the customization you require.<br/>If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate style that needs to be edited.</p>
+                <div class="snippet-container"><div class="sh_default snippet-wrap"><div class="snippet-menu sh_sourceCode"><a class="snippet-window sh_url" href="#">pop-up</a><a class="snippet-text sh_url" href="#">text</a></div><pre class="shi_pre sh_css snippet-formatted sh_sourceCode"><ol class="snippet-num"><li></li><li><span class="sh_comment">/*</span></li><li><span class="sh_comment">Name: Ashoka</span></li><li><span class="sh_comment">Version: 1.0</span></li><li><span class="sh_comment">Author: GeeksLabs</span></li><li><span class="sh_comment">Author URI: </span><a class="sh_url" href="http://www.geekslabs.com">http://www.geekslabs.com</a></li><li><span class="sh_comment">*/</span></li><li><span class="sh_comment">/*---------------------------------</span></li><li></li><li><span class="sh_comment">Table of Contents:</span></li><li></li><li><span class="sh_comment">1. Basic Elements</span></li><li><span class="sh_comment">2. Logo </span></li><li><span class="sh_comment">3. Menu</span></li><li><span class="sh_comment">4. Video background</span></li><li><span class="sh_comment">5. Content</span></li><li><span class="sh_comment">6. About Section</span></li><li><span class="sh_comment">7. Work Section</span></li><li><span class="sh_comment">8. Services Section</span></li><li><span class="sh_comment">9. Separator- Text &amp; Video</span></li><li><span class="sh_comment">10. Portfolio Section</span></li><li><span class="sh_comment">11. Separator- Stats </span></li><li><span class="sh_comment">12. Clients Section</span></li><li><span class="sh_comment">13. Testimonials Section</span></li><li><span class="sh_comment">14. Team Section</span></li><li><span class="sh_comment">15. Pricing Option</span></li><li><span class="sh_comment">16. Separator - Get Connected</span></li><li><span class="sh_comment">17. Contact Form</span></li><li><span class="sh_comment">18. Google Map</span></li><li><span class="sh_comment">19. Footer Section</span></li><li><span class="sh_comment">20. Social icons</span></li><li><span class="sh_comment">21. Media Queries</span></li><li><span class="sh_comment">----------------------------------*/</span></li></ol></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;" tabindex="0" contenteditable="">/*
+Name: Ashoka
+Version: 1.0
+Author: GeeksLabs
+Author URI: http://www.geekslabs.com
+*/
+/*---------------------------------
+Table of Contents:
+1. Basic Elements
+2. Logo
+3. Menu
+4. Video background
+5. Content
+6. About Section
+7. Work Section
+8. Services Section
+9. Separator- Text &amp; Video
+10. Portfolio Section
+11. Separator- Stats
+12. Clients Section
+13. Testimonials Section
+14. Team Section
+15. Pricing Option
+16. Separator - Get Connected
+17. Contact Form
+18. Google Map
+19. Footer Section
+20. Social icons
+21. Media Queries
+----------------------------------*/
+              </pre></div></div>
+<br/><br/><br/>
+<p><i class="arrow_carrot-right_alt2"></i> The <code>vendor</code> folder contains Bootstrap core css file, 3rd party jQuery plugin css and other css.</p>
+              <div class="snippet-container"><div class="sh_default snippet-wrap"><div class="snippet-menu sh_sourceCode"><a class="snippet-window sh_url" href="#">pop-up</a><a class="snippet-text sh_url" href="#">text</a></div><pre class="shi_pre sh_html snippet-formatted sh_sourceCode"><ol class="snippet-num"><li><span class="sh_comment">&lt;!-- stylesheet --&gt;</span></li><li>        <span class="sh_keyword">&lt;link</span> <span class="sh_type">rel</span><span class="sh_symbol">=</span><span class="sh_string">"stylesheet"</span> <span class="sh_type">href</span><span class="sh_symbol">=</span><span class="sh_string">"css/vendor/pace.css"</span><span class="sh_keyword">&gt;</span></li><li>        <span class="sh_keyword">&lt;link</span> <span class="sh_type">rel</span><span class="sh_symbol">=</span><span class="sh_string">"stylesheet"</span> <span class="sh_type">href</span><span class="sh_symbol">=</span><span class="sh_string">"css/vendor/bootstrap.css"</span><span class="sh_keyword">&gt;</span>        </li><li>        <span class="sh_keyword">&lt;link</span> <span class="sh_type">rel</span><span class="sh_symbol">=</span><span class="sh_string">"stylesheet"</span> <span class="sh_type">href</span><span class="sh_symbol">=</span><span class="sh_string">"css/style.css"</span><span class="sh_keyword">&gt;</span></li><li></li><li>        <span class="sh_keyword">&lt;link</span> <span class="sh_type">rel</span><span class="sh_symbol">=</span><span class="sh_string">"stylesheet"</span> <span class="sh_type">href</span><span class="sh_symbol">=</span><span class="sh_string">"css/vendor/animate.css"</span><span class="sh_keyword">&gt;</span></li><li>        <span class="sh_keyword">&lt;link</span> <span class="sh_type">rel</span><span class="sh_symbol">=</span><span class="sh_string">"stylesheet"</span> <span class="sh_type">href</span><span class="sh_symbol">=</span><span class="sh_string">"css/vendor/simpletextrotator.css"</span><span class="sh_keyword">&gt;</span></li><li>        <span class="sh_keyword">&lt;link</span> <span class="sh_type">rel</span><span class="sh_symbol">=</span><span class="sh_string">"stylesheet"</span> <span class="sh_type">href</span><span class="sh_symbol">=</span><span class="sh_string">"css/vendor/owl.carousel.css"</span><span class="sh_keyword">&gt;</span></li><li>        <span class="sh_keyword">&lt;link</span> <span class="sh_type">rel</span><span class="sh_symbol">=</span><span class="sh_string">"stylesheet"</span> <span class="sh_type">href</span><span class="sh_symbol">=</span><span class="sh_string">"css/vendor/elegant-font-icon.css"</span><span class="sh_keyword">&gt;</span></li><li>        <span class="sh_keyword">&lt;link</span> <span class="sh_type">rel</span><span class="sh_symbol">=</span><span class="sh_string">"stylesheet"</span> <span class="sh_type">href</span><span class="sh_symbol">=</span><span class="sh_string">"css/vendor/style-switcher.css"</span><span class="sh_keyword">&gt;</span></li></ol></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;" tabindex="0" contenteditable="">&lt;!-- stylesheet --&gt;
+&lt;link rel="stylesheet" href="css/vendor/pace.css"&gt;
+&lt;link rel="stylesheet" href="css/vendor/bootstrap.css"&gt;
+&lt;link rel="stylesheet" href="css/style.css"&gt;
+&lt;link rel="stylesheet" href="css/vendor/animate.css"&gt;
+&lt;link rel="stylesheet" href="css/vendor/simpletextrotator.css"&gt;
+&lt;link rel="stylesheet" href="css/vendor/owl.carousel.css"&gt;
+&lt;link rel="stylesheet" href="css/vendor/elegant-font-icon.css"&gt;
+            &lt;link rel="stylesheet" href="css/vendor/style-switcher.css"&gt;</pre></div></div>
+<br/><br/><br/>
+<p><i class="arrow_carrot-right_alt2"></i> Ashoka have predefine 15 Color Skins, You can use directly or updates theme default colors from <code>color</code> folder.</p>
+            <div class="snippet-container"><div class="sh_default snippet-wrap"><div class="snippet-menu sh_sourceCode"><a class="snippet-window sh_url" href="#">pop-up</a><a class="snippet-text sh_url" href="#">text</a></div><pre class="shi_pre sh_html snippet-formatted sh_sourceCode"><ol class="snippet-num"><li><span class="sh_comment">&lt;!-- Custom styles for this template --&gt;</span>        </li><li>        <span class="sh_keyword">&lt;link</span> <span class="sh_type">rel</span><span class="sh_symbol">=</span><span class="sh_string">"stylesheet"</span> <span class="sh_type">type</span><span class="sh_symbol">=</span><span class="sh_string">"text/css"</span> <span class="sh_type">href</span><span class="sh_symbol">=</span><span class="sh_string">"css/colors/blue.css"</span> <span class="sh_type">title</span><span class="sh_symbol">=</span><span class="sh_string">"blue"</span> <span class="sh_type">media</span><span class="sh_symbol">=</span><span class="sh_string">"screen"</span><span class="sh_keyword">/&gt;</span></li><li>        <span class="sh_keyword">&lt;link</span> <span class="sh_type">rel</span><span class="sh_symbol">=</span><span class="sh_string">"stylesheet"</span> <span class="sh_type">type</span><span class="sh_symbol">=</span><span class="sh_string">"text/css"</span> <span class="sh_type">href</span><span class="sh_symbol">=</span><span class="sh_string">"css/colors/blue-2.css"</span> <span class="sh_type">title</span><span class="sh_symbol">=</span><span class="sh_string">"blue-2"</span> <span class="sh_type">media</span><span class="sh_symbol">=</span><span class="sh_string">"screen"</span><span class="sh_keyword">/&gt;</span></li><li>        <span class="sh_keyword">&lt;link</span> <span class="sh_type">rel</span><span class="sh_symbol">=</span><span class="sh_string">"stylesheet"</span> <span class="sh_type">type</span><span class="sh_symbol">=</span><span class="sh_string">"text/css"</span> <span class="sh_type">href</span><span class="sh_symbol">=</span><span class="sh_string">"css/colors/purple.css"</span> <span class="sh_type">title</span><span class="sh_symbol">=</span><span class="sh_string">"purple"</span> <span class="sh_type">media</span><span class="sh_symbol">=</span><span class="sh_string">"screen"</span><span class="sh_keyword">/&gt;</span></li><li>        <span class="sh_keyword">&lt;link</span> <span class="sh_type">rel</span><span class="sh_symbol">=</span><span class="sh_string">"stylesheet"</span> <span class="sh_type">type</span><span class="sh_symbol">=</span><span class="sh_string">"text/css"</span> <span class="sh_type">href</span><span class="sh_symbol">=</span><span class="sh_string">"css/colors/green.css"</span> <span class="sh_type">title</span><span class="sh_symbol">=</span><span class="sh_string">"green"</span> <span class="sh_type">media</span><span class="sh_symbol">=</span><span class="sh_string">"screen"</span><span class="sh_keyword">/&gt;</span></li><li>        <span class="sh_keyword">&lt;link</span> <span class="sh_type">rel</span><span class="sh_symbol">=</span><span class="sh_string">"stylesheet"</span> <span class="sh_type">type</span><span class="sh_symbol">=</span><span class="sh_string">"text/css"</span> <span class="sh_type">href</span><span class="sh_symbol">=</span><span class="sh_string">"css/colors/green-2.css"</span> <span class="sh_type">title</span><span class="sh_symbol">=</span><span class="sh_string">"green-2"</span> <span class="sh_type">media</span><span class="sh_symbol">=</span><span class="sh_string">"screen"</span><span class="sh_keyword">/&gt;</span></li><li>        <span class="sh_keyword">&lt;link</span> <span class="sh_type">rel</span><span class="sh_symbol">=</span><span class="sh_string">"stylesheet"</span> <span class="sh_type">type</span><span class="sh_symbol">=</span><span class="sh_string">"text/css"</span> <span class="sh_type">href</span><span class="sh_symbol">=</span><span class="sh_string">"css/colors/yellow.css"</span> <span class="sh_type">title</span><span class="sh_symbol">=</span><span class="sh_string">"yellow"</span> <span class="sh_type">media</span><span class="sh_symbol">=</span><span class="sh_string">"screen"</span><span class="sh_keyword">/&gt;</span></li><li>        <span class="sh_keyword">&lt;link</span> <span class="sh_type">rel</span><span class="sh_symbol">=</span><span class="sh_string">"stylesheet"</span> <span class="sh_type">type</span><span class="sh_symbol">=</span><span class="sh_string">"text/css"</span> <span class="sh_type">href</span><span class="sh_symbol">=</span><span class="sh_string">"css/colors/orange.css"</span> <span class="sh_type">title</span><span class="sh_symbol">=</span><span class="sh_string">"orange"</span> <span class="sh_type">media</span><span class="sh_symbol">=</span><span class="sh_string">"screen"</span><span class="sh_keyword">/&gt;</span></li><li>        <span class="sh_keyword">&lt;link</span> <span class="sh_type">rel</span><span class="sh_symbol">=</span><span class="sh_string">"stylesheet"</span> <span class="sh_type">type</span><span class="sh_symbol">=</span><span class="sh_string">"text/css"</span> <span class="sh_type">href</span><span class="sh_symbol">=</span><span class="sh_string">"css/colors/red.css"</span> <span class="sh_type">title</span><span class="sh_symbol">=</span><span class="sh_string">"red"</span> <span class="sh_type">media</span><span class="sh_symbol">=</span><span class="sh_string">"screen"</span><span class="sh_keyword">/&gt;</span></li><li>        <span class="sh_keyword">&lt;link</span> <span class="sh_type">rel</span><span class="sh_symbol">=</span><span class="sh_string">"stylesheet"</span> <span class="sh_type">type</span><span class="sh_symbol">=</span><span class="sh_string">"text/css"</span> <span class="sh_type">href</span><span class="sh_symbol">=</span><span class="sh_string">"css/colors/red-2.css"</span> <span class="sh_type">title</span><span class="sh_symbol">=</span><span class="sh_string">"red-2"</span> <span class="sh_type">media</span><span class="sh_symbol">=</span><span class="sh_string">"screen"</span><span class="sh_keyword">/&gt;</span></li><li>        <span class="sh_keyword">&lt;link</span> <span class="sh_type">rel</span><span class="sh_symbol">=</span><span class="sh_string">"stylesheet"</span> <span class="sh_type">type</span><span class="sh_symbol">=</span><span class="sh_string">"text/css"</span> <span class="sh_type">href</span><span class="sh_symbol">=</span><span class="sh_string">"css/colors/red-3.css"</span> <span class="sh_type">title</span><span class="sh_symbol">=</span><span class="sh_string">"red-3"</span> <span class="sh_type">media</span><span class="sh_symbol">=</span><span class="sh_string">"screen"</span><span class="sh_keyword">/&gt;</span>        </li><li>        <span class="sh_keyword">&lt;link</span> <span class="sh_type">rel</span><span class="sh_symbol">=</span><span class="sh_string">"stylesheet"</span> <span class="sh_type">type</span><span class="sh_symbol">=</span><span class="sh_string">"text/css"</span> <span class="sh_type">href</span><span class="sh_symbol">=</span><span class="sh_string">"css/colors/pink.css"</span> <span class="sh_type">title</span><span class="sh_symbol">=</span><span class="sh_string">"pink"</span> <span class="sh_type">media</span><span class="sh_symbol">=</span><span class="sh_string">"screen"</span><span class="sh_keyword">/&gt;</span></li><li>        <span class="sh_keyword">&lt;link</span> <span class="sh_type">rel</span><span class="sh_symbol">=</span><span class="sh_string">"stylesheet"</span> <span class="sh_type">type</span><span class="sh_symbol">=</span><span class="sh_string">"text/css"</span> <span class="sh_type">href</span><span class="sh_symbol">=</span><span class="sh_string">"css/colors/pink-2.css"</span> <span class="sh_type">title</span><span class="sh_symbol">=</span><span class="sh_string">"pink-2"</span> <span class="sh_type">media</span><span class="sh_symbol">=</span><span class="sh_string">"screen"</span><span class="sh_keyword">/&gt;</span></li><li>        <span class="sh_keyword">&lt;link</span> <span class="sh_type">rel</span><span class="sh_symbol">=</span><span class="sh_string">"stylesheet"</span> <span class="sh_type">type</span><span class="sh_symbol">=</span><span class="sh_string">"text/css"</span> <span class="sh_type">href</span><span class="sh_symbol">=</span><span class="sh_string">"css/colors/beige.css"</span> <span class="sh_type">title</span><span class="sh_symbol">=</span><span class="sh_string">"beige"</span> <span class="sh_type">media</span><span class="sh_symbol">=</span><span class="sh_string">"screen"</span><span class="sh_keyword">/&gt;</span></li><li>        <span class="sh_keyword">&lt;link</span> <span class="sh_type">rel</span><span class="sh_symbol">=</span><span class="sh_string">"stylesheet"</span> <span class="sh_type">type</span><span class="sh_symbol">=</span><span class="sh_string">"text/css"</span> <span class="sh_type">href</span><span class="sh_symbol">=</span><span class="sh_string">"css/colors/midnight.css"</span> <span class="sh_type">title</span><span class="sh_symbol">=</span><span class="sh_string">"midnight"</span> <span class="sh_type">media</span><span class="sh_symbol">=</span><span class="sh_string">"screen"</span><span class="sh_keyword">/&gt;</span></li><li>        <span class="sh_keyword">&lt;link</span> <span class="sh_type">rel</span><span class="sh_symbol">=</span><span class="sh_string">"stylesheet"</span> <span class="sh_type">type</span><span class="sh_symbol">=</span><span class="sh_string">"text/css"</span> <span class="sh_type">href</span><span class="sh_symbol">=</span><span class="sh_string">"css/colors/black.css"</span> <span class="sh_type">title</span><span class="sh_symbol">=</span><span class="sh_string">"black"</span> <span class="sh_type">media</span><span class="sh_symbol">=</span><span class="sh_string">"screen"</span><span class="sh_keyword">/&gt;</span></li></ol></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;" tabindex="0" contenteditable="">&lt;!-- Custom styles for this template --&gt;
+&lt;link rel="stylesheet" type="text/css" href="css/colors/blue.css" title="blue" media="screen"/&gt;
+&lt;link rel="stylesheet" type="text/css" href="css/colors/blue-2.css" title="blue-2" media="screen"/&gt;
+&lt;link rel="stylesheet" type="text/css" href="css/colors/purple.css" title="purple" media="screen"/&gt;
+&lt;link rel="stylesheet" type="text/css" href="css/colors/green.css" title="green" media="screen"/&gt;
+&lt;link rel="stylesheet" type="text/css" href="css/colors/green-2.css" title="green-2" media="screen"/&gt;
+&lt;link rel="stylesheet" type="text/css" href="css/colors/yellow.css" title="yellow" media="screen"/&gt;
+&lt;link rel="stylesheet" type="text/css" href="css/colors/orange.css" title="orange" media="screen"/&gt;
+&lt;link rel="stylesheet" type="text/css" href="css/colors/red.css" title="red" media="screen"/&gt;
+&lt;link rel="stylesheet" type="text/css" href="css/colors/red-2.css" title="red-2" media="screen"/&gt;
+&lt;link rel="stylesheet" type="text/css" href="css/colors/red-3.css" title="red-3" media="screen"/&gt;
+&lt;link rel="stylesheet" type="text/css" href="css/colors/pink.css" title="pink" media="screen"/&gt;
+&lt;link rel="stylesheet" type="text/css" href="css/colors/pink-2.css" title="pink-2" media="screen"/&gt;
+&lt;link rel="stylesheet" type="text/css" href="css/colors/beige.css" title="beige" media="screen"/&gt;
+&lt;link rel="stylesheet" type="text/css" href="css/colors/midnight.css" title="midnight" media="screen"/&gt;
+          &lt;link rel="stylesheet" type="text/css" href="css/colors/black.css" title="black" media="screen"/&gt;</pre></div></div>
+        </div>
+      </div>
+      <div id="js-settings" class="doc-post ">
+<h2 class="doc-heading">JAVASCRIPT SETTINGS</h2>
+<hr>
+        <div class="row doc-content">
+<p><i class="arrow_carrot-right_alt2"></i> After unzip the Theme files you can see <code>Ashoka/js</code> folder. That js folder contains main.js(custome javascript) & vendor folder contains jQuery, bootstrap and other jQuery plugins.</p>
+        </div>
+        <div class="snippet-container"><div class="sh_default snippet-wrap"><div class="snippet-menu sh_sourceCode"><a class="snippet-window sh_url" href="#">pop-up</a><a class="snippet-text sh_url" href="#">text</a></div><pre class="shi_pre sh_html snippet-formatted sh_sourceCode"><ol class="snippet-num"><li><span class="sh_comment">&lt;!-- scripts --&gt;</span></li><li><span class="sh_keyword">&lt;script</span> <span class="sh_type">type</span><span class="sh_symbol">=</span><span class="sh_string">"text/javascript"</span> <span class="sh_type">src</span><span class="sh_symbol">=</span><span class="sh_string">"js/vendor/jquery-1.11.0.min.js"</span><span class="sh_keyword">&gt;&lt;/script&gt;</span></li><li><span class="sh_keyword">&lt;script</span> <span class="sh_type">type</span><span class="sh_symbol">=</span><span class="sh_string">"text/javascript"</span> <span class="sh_type">src</span><span class="sh_symbol">=</span><span class="sh_string">"js/vendor/modernizr.custom.js"</span><span class="sh_keyword">&gt;&lt;/script&gt;</span> </li><li><span class="sh_keyword">&lt;script</span> <span class="sh_type">type</span><span class="sh_symbol">=</span><span class="sh_string">"text/javascript"</span> <span class="sh_type">src</span><span class="sh_symbol">=</span><span class="sh_string">"js/vendor/bootstrap.min.js"</span><span class="sh_keyword">&gt;&lt;/script&gt;</span></li><li><span class="sh_keyword">&lt;script</span> <span class="sh_type">type</span><span class="sh_symbol">=</span><span class="sh_string">"text/javascript"</span> <span class="sh_type">src</span><span class="sh_symbol">=</span><span class="sh_string">"js/vendor/classie.js"</span><span class="sh_keyword">&gt;&lt;/script&gt;</span></li><li><span class="sh_keyword">&lt;script</span> <span class="sh_type">type</span><span class="sh_symbol">=</span><span class="sh_string">"text/javascript"</span> <span class="sh_type">src</span><span class="sh_symbol">=</span><span class="sh_string">"js/vendor/respond.js"</span><span class="sh_keyword">&gt;&lt;/script&gt;</span></li><li><span class="sh_keyword">&lt;script</span> <span class="sh_type">type</span><span class="sh_symbol">=</span><span class="sh_string">"text/javascript"</span> <span class="sh_type">src</span><span class="sh_symbol">=</span><span class="sh_string">"js/vendor/jquery.counterup.js"</span><span class="sh_keyword">&gt;&lt;/script&gt;</span></li><li><span class="sh_keyword">&lt;script</span> <span class="sh_type">type</span><span class="sh_symbol">=</span><span class="sh_string">"text/javascript"</span> <span class="sh_type">src</span><span class="sh_symbol">=</span><span class="sh_string">"js/vendor/smoothscroll.js"</span><span class="sh_keyword">&gt;&lt;/script&gt;</span></li><li><span class="sh_keyword">&lt;script</span> <span class="sh_type">type</span><span class="sh_symbol">=</span><span class="sh_string">"text/javascript"</span> <span class="sh_type">src</span><span class="sh_symbol">=</span><span class="sh_string">"js/vendor/jquery.backgroundvideo.min.js"</span><span class="sh_keyword">&gt;&lt;/script&gt;</span></li><li><span class="sh_keyword">&lt;script</span> <span class="sh_type">type</span><span class="sh_symbol">=</span><span class="sh_string">"text/javascript"</span> <span class="sh_type">src</span><span class="sh_symbol">=</span><span class="sh_string">"js/vendor/wow.js"</span><span class="sh_keyword">&gt;&lt;/script&gt;</span></li><li><span class="sh_keyword">&lt;script</span> <span class="sh_type">type</span><span class="sh_symbol">=</span><span class="sh_string">"text/javascript"</span> <span class="sh_type">src</span><span class="sh_symbol">=</span><span class="sh_string">"js/vendor/jquery.simple-text-rotator.min.js"</span><span class="sh_keyword">&gt;&lt;/script&gt;</span>     </li><li><span class="sh_keyword">&lt;script</span> <span class="sh_type">type</span><span class="sh_symbol">=</span><span class="sh_string">"text/javascript"</span> <span class="sh_type">src</span><span class="sh_symbol">=</span><span class="sh_string">"js/vendor/owl.carousel.min.js"</span><span class="sh_keyword">&gt;&lt;/script&gt;</span></li><li><span class="sh_keyword">&lt;script</span> <span class="sh_type">type</span><span class="sh_symbol">=</span><span class="sh_string">"text/javascript"</span> <span class="sh_type">src</span><span class="sh_symbol">=</span><span class="sh_string">"js/vendor/imagesloaded.pkgd.min.js"</span><span class="sh_keyword">&gt;&lt;/script&gt;</span></li><li><span class="sh_keyword">&lt;script</span> <span class="sh_type">type</span><span class="sh_symbol">=</span><span class="sh_string">"text/javascript"</span> <span class="sh_type">src</span><span class="sh_symbol">=</span><span class="sh_string">"js/vendor/masonry.pkgd.min.js"</span><span class="sh_keyword">&gt;&lt;/script&gt;</span></li><li><span class="sh_keyword">&lt;script</span> <span class="sh_type">type</span><span class="sh_symbol">=</span><span class="sh_string">"text/javascript"</span> <span class="sh_type">src</span><span class="sh_symbol">=</span><span class="sh_string">"js/vendor/cbpGridGallery.js"</span><span class="sh_keyword">&gt;&lt;/script&gt;</span></li><li><span class="sh_keyword">&lt;script</span> <span class="sh_type">type</span><span class="sh_symbol">=</span><span class="sh_string">"text/javascript"</span> <span class="sh_type">src</span><span class="sh_symbol">=</span><span class="sh_string">"js/vendor/styleswitch.js"</span><span class="sh_keyword">&gt;&lt;/script&gt;</span>       </li><li><span class="sh_keyword">&lt;script</span> <span class="sh_type">type</span><span class="sh_symbol">=</span><span class="sh_string">"text/javascript"</span> <span class="sh_type">src</span><span class="sh_symbol">=</span><span class="sh_string">"https://maps.googleapis.com/maps/api/js?key=AIzaSyAAZnaZBXLqNBRXjd-82km_NO7GUItyKek&amp;sensor=false"</span><span class="sh_keyword">&gt;&lt;/script&gt;</span></li><li><span class="sh_keyword">&lt;script</span> <span class="sh_type">type</span><span class="sh_symbol">=</span><span class="sh_string">"text/javascript"</span> <span class="sh_type">src</span><span class="sh_symbol">=</span><span class="sh_string">"js/script.js"</span><span class="sh_keyword">&gt;&lt;/script&gt;</span></li></ol></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;" tabindex="0" contenteditable="">&lt;!-- scripts --&gt;
+&lt;script type="text/javascript" src="js/vendor/jquery-1.11.0.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="js/vendor/modernizr.custom.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="js/vendor/bootstrap.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="js/vendor/classie.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="js/vendor/respond.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="js/vendor/jquery.counterup.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="js/vendor/smoothscroll.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="js/vendor/jquery.backgroundvideo.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="js/vendor/wow.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="js/vendor/jquery.simple-text-rotator.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="js/vendor/owl.carousel.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="js/vendor/imagesloaded.pkgd.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="js/vendor/masonry.pkgd.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="js/vendor/cbpGridGallery.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="js/vendor/styleswitch.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAZnaZBXLqNBRXjd-82km_NO7GUItyKek&amp;sensor=false"&gt;&lt;/script&gt;
+      &lt;script type="text/javascript" src="js/script.js"&gt;&lt;/script&gt;</pre></div></div>
+<br/><br/><br/>
+<p><i class="arrow_carrot-right_alt2"></i> Open <code>script.js</code>, From here you can modify any settings for Slides, Responsive Headings, Parallax Effects, Section & text Animations, Testimonial slider, Contact Form Validation & Submition, Google Map UI and Integration.</p>
+            <div class="snippet-container"><div class="sh_default snippet-wrap"><div class="snippet-menu sh_sourceCode"><a class="snippet-window sh_url" href="#">pop-up</a><a class="snippet-text sh_url" href="#">text</a></div><pre class="shi_pre sh_javascript snippet-formatted sh_sourceCode"><ol class="snippet-num"><li>$<span class="sh_symbol">(</span><span class="sh_keyword">function</span><span class="sh_symbol">()</span><span class="sh_cbracket">{</span></li><li></li><li>    <span class="sh_comment">//Logo fadeIn fadeOut on </span></li><li>    $<span class="sh_symbol">(</span>window<span class="sh_symbol">).</span><span class="sh_function">scroll</span><span class="sh_symbol">(</span><span class="sh_keyword">function</span><span class="sh_symbol">()</span><span class="sh_cbracket">{</span></li><li>      <span class="sh_keyword">if</span><span class="sh_symbol">(</span>$<span class="sh_symbol">(</span><span class="sh_keyword">this</span><span class="sh_symbol">).</span><span class="sh_function">scrollTop</span><span class="sh_symbol">()</span> <span class="sh_symbol">&gt;</span> $<span class="sh_symbol">(</span>window<span class="sh_symbol">).</span><span class="sh_function">height</span><span class="sh_symbol">()/</span><span class="sh_number">2.2</span><span class="sh_symbol">)</span> $<span class="sh_symbol">(</span><span class="sh_string">'.logo-wrapper'</span><span class="sh_symbol">).</span><span class="sh_function">fadeOut</span><span class="sh_symbol">(</span><span class="sh_string">'slow'</span><span class="sh_symbol">);</span></li><li>      <span class="sh_keyword">if</span><span class="sh_symbol">(</span>$<span class="sh_symbol">(</span><span class="sh_keyword">this</span><span class="sh_symbol">).</span><span class="sh_function">scrollTop</span><span class="sh_symbol">()</span> <span class="sh_symbol">&lt;</span> $<span class="sh_symbol">(</span>window<span class="sh_symbol">).</span><span class="sh_function">height</span><span class="sh_symbol">()/</span><span class="sh_number">2.2</span><span class="sh_symbol">)</span> $<span class="sh_symbol">(</span><span class="sh_string">'.logo-wrapper'</span><span class="sh_symbol">).</span><span class="sh_function">fadeIn</span><span class="sh_symbol">(</span><span class="sh_string">'slow'</span><span class="sh_symbol">);</span></li><li>    <span class="sh_cbracket">}</span><span class="sh_symbol">);</span></li><li></li><li>    <span class="sh_comment">//Using the smooth scroll for smooth navigation</span></li><li>    smoothScroll<span class="sh_symbol">.</span><span class="sh_function">init</span><span class="sh_symbol">();</span></li><li>    smoothScroll<span class="sh_symbol">.</span><span class="sh_function">init</span><span class="sh_symbol">(</span><span class="sh_cbracket">{</span></li><li>        speed<span class="sh_symbol">:</span> <span class="sh_number">500</span><span class="sh_symbol">,</span> <span class="sh_comment">// Integer. How fast to complete the scroll in milliseconds</span></li><li>        easing<span class="sh_symbol">:</span> <span class="sh_string">'easeInOutCubic'</span><span class="sh_symbol">,</span> <span class="sh_comment">// Easing pattern to use</span></li><li>        updateURL<span class="sh_symbol">:</span> <span class="sh_keyword">false</span><span class="sh_symbol">,</span> <span class="sh_comment">// Boolean. Whether or not to update the URL with the anchor hash on scroll</span></li><li>        offset<span class="sh_symbol">:</span> <span class="sh_number">0</span><span class="sh_symbol">,</span> <span class="sh_comment">// Integer. How far to offset the scrolling anchor location in pixels</span></li><li>        callbackBefore<span class="sh_symbol">:</span> <span class="sh_keyword">function</span> <span class="sh_symbol">(</span> toggle<span class="sh_symbol">,</span> anchor <span class="sh_symbol">)</span> <span class="sh_cbracket">{}</span><span class="sh_symbol">,</span> <span class="sh_comment">// Function to run before scrolling</span></li><li>        callbackAfter<span class="sh_symbol">:</span> <span class="sh_keyword">function</span> <span class="sh_symbol">(</span> toggle<span class="sh_symbol">,</span> anchor <span class="sh_symbol">)</span> <span class="sh_cbracket">{}</span> <span class="sh_comment">// Function to run after scrolling</span></li><li>    <span class="sh_cbracket">}</span><span class="sh_symbol">);</span></li><li></li><li>    <span class="sh_comment">//wow animation by using with animate css</span></li><li>    <span class="sh_keyword">if</span><span class="sh_symbol">(</span>$<span class="sh_symbol">(</span>window<span class="sh_symbol">).</span><span class="sh_function">width</span><span class="sh_symbol">()</span> <span class="sh_symbol">&gt;</span> <span class="sh_number">480</span><span class="sh_symbol">)</span> <span class="sh_cbracket">{</span></li><li>        <span class="sh_keyword">var</span> wow <span class="sh_symbol">=</span> <span class="sh_keyword">new</span> <span class="sh_function">WOW</span><span class="sh_symbol">(</span></li><li>          <span class="sh_cbracket">{</span></li><li>            boxClass<span class="sh_symbol">:</span>     <span class="sh_string">'wow'</span><span class="sh_symbol">,</span>      </li><li>            animateClass<span class="sh_symbol">:</span> <span class="sh_string">'animated'</span><span class="sh_symbol">,</span> </li><li>            offset<span class="sh_symbol">:</span>       <span class="sh_number">0</span><span class="sh_symbol">,</span>          </li><li>            mobile<span class="sh_symbol">:</span>       <span class="sh_keyword">true</span>        </li><li>          <span class="sh_cbracket">}</span></li><li>        <span class="sh_symbol">);</span></li><li>        wow<span class="sh_symbol">.</span><span class="sh_function">init</span><span class="sh_symbol">();</span></li><li>    <span class="sh_cbracket">}</span></li><li></li><li>    <span class="sh_comment">// Full screen navigations</span></li><li>    <span class="sh_keyword">var</span> triggerBttn <span class="sh_symbol">=</span> document<span class="sh_symbol">.</span><span class="sh_function">getElementById</span><span class="sh_symbol">(</span> <span class="sh_string">'trigger-navbar'</span> <span class="sh_symbol">),</span></li><li>        navbar <span class="sh_symbol">=</span> document<span class="sh_symbol">.</span><span class="sh_function">querySelector</span><span class="sh_symbol">(</span> <span class="sh_string">'section.navbar'</span> <span class="sh_symbol">),</span></li><li>        closeBttn <span class="sh_symbol">=</span> navbar<span class="sh_symbol">.</span><span class="sh_function">querySelector</span><span class="sh_symbol">(</span> <span class="sh_string">'a.navbar-close'</span> <span class="sh_symbol">);</span></li><li>        navClick <span class="sh_symbol">=</span> navbar<span class="sh_symbol">.</span><span class="sh_function">querySelector</span><span class="sh_symbol">(</span> <span class="sh_string">'section.navbar nav ul li a'</span> <span class="sh_symbol">);</span></li><li>        transEndEventNames <span class="sh_symbol">=</span> <span class="sh_cbracket">{</span></li><li>            <span class="sh_string">'WebkitTransition'</span><span class="sh_symbol">:</span> <span class="sh_string">'webkitTransitionEnd'</span><span class="sh_symbol">,</span></li><li>            <span class="sh_string">'MozTransition'</span><span class="sh_symbol">:</span> <span class="sh_string">'transitionend'</span><span class="sh_symbol">,</span></li><li>            <span class="sh_string">'OTransition'</span><span class="sh_symbol">:</span> <span class="sh_string">'oTransitionEnd'</span><span class="sh_symbol">,</span></li><li>            <span class="sh_string">'msTransition'</span><span class="sh_symbol">:</span> <span class="sh_string">'MSTransitionEnd'</span><span class="sh_symbol">,</span></li><li>            <span class="sh_string">'transition'</span><span class="sh_symbol">:</span> <span class="sh_string">'transitionend'</span></li><li>        <span class="sh_cbracket">}</span><span class="sh_symbol">,</span></li><li>        transEndEventName <span class="sh_symbol">=</span> transEndEventNames<span class="sh_symbol">[</span> Modernizr<span class="sh_symbol">.</span><span class="sh_function">prefixed</span><span class="sh_symbol">(</span> <span class="sh_string">'transition'</span> <span class="sh_symbol">)</span> <span class="sh_symbol">],</span></li><li>        support <span class="sh_symbol">=</span> <span class="sh_cbracket">{</span> transitions <span class="sh_symbol">:</span> Modernizr<span class="sh_symbol">.</span>csstransitions <span class="sh_cbracket">}</span><span class="sh_symbol">;</span></li><li></li><li>    <span class="sh_keyword">function</span> <span class="sh_function">toggleOverlay</span><span class="sh_symbol">()</span> <span class="sh_cbracket">{</span></li><li>        <span class="sh_keyword">if</span><span class="sh_symbol">(</span> classie<span class="sh_symbol">.</span><span class="sh_function">has</span><span class="sh_symbol">(</span> navbar<span class="sh_symbol">,</span> <span class="sh_string">'open'</span> <span class="sh_symbol">)</span> <span class="sh_symbol">)</span> <span class="sh_cbracket">{</span></li><li>            classie<span class="sh_symbol">.</span><span class="sh_function">remove</span><span class="sh_symbol">(</span> navbar<span class="sh_symbol">,</span> <span class="sh_string">'open'</span> <span class="sh_symbol">);</span></li><li>            classie<span class="sh_symbol">.</span><span class="sh_function">add</span><span class="sh_symbol">(</span> navbar<span class="sh_symbol">,</span> <span class="sh_string">'close'</span> <span class="sh_symbol">);</span></li><li>            <span class="sh_keyword">var</span> onEndTransitionFn <span class="sh_symbol">=</span> <span class="sh_keyword">function</span><span class="sh_symbol">(</span> ev <span class="sh_symbol">)</span> <span class="sh_cbracket">{</span></li><li>                <span class="sh_keyword">if</span><span class="sh_symbol">(</span> support<span class="sh_symbol">.</span>transitions <span class="sh_symbol">)</span> <span class="sh_cbracket">{</span></li><li>                    <span class="sh_keyword">if</span><span class="sh_symbol">(</span> ev<span class="sh_symbol">.</span>propertyName <span class="sh_symbol">!==</span> <span class="sh_string">'visibility'</span> <span class="sh_symbol">)</span> <span class="sh_keyword">return</span><span class="sh_symbol">;</span></li><li>                    <span class="sh_keyword">this</span><span class="sh_symbol">.</span><span class="sh_function">removeEventListener</span><span class="sh_symbol">(</span> transEndEventName<span class="sh_symbol">,</span> onEndTransitionFn <span class="sh_symbol">);</span></li><li>                <span class="sh_cbracket">}</span></li><li>                classie<span class="sh_symbol">.</span><span class="sh_function">remove</span><span class="sh_symbol">(</span> navbar<span class="sh_symbol">,</span> <span class="sh_string">'close'</span> <span class="sh_symbol">);</span></li><li>            <span class="sh_cbracket">}</span><span class="sh_symbol">;</span></li><li>            <span class="sh_keyword">if</span><span class="sh_symbol">(</span> support<span class="sh_symbol">.</span>transitions <span class="sh_symbol">)</span> <span class="sh_cbracket">{</span></li><li>                navbar<span class="sh_symbol">.</span><span class="sh_function">addEventListener</span><span class="sh_symbol">(</span> transEndEventName<span class="sh_symbol">,</span> onEndTransitionFn <span class="sh_symbol">);</span></li><li>            <span class="sh_cbracket">}</span></li><li>            <span class="sh_keyword">else</span> <span class="sh_cbracket">{</span></li><li>                <span class="sh_function">onEndTransitionFn</span><span class="sh_symbol">();</span></li><li>            <span class="sh_cbracket">}</span></li><li>        <span class="sh_cbracket">}</span></li><li>        <span class="sh_keyword">else</span> <span class="sh_keyword">if</span><span class="sh_symbol">(</span> <span class="sh_symbol">!</span>classie<span class="sh_symbol">.</span><span class="sh_function">has</span><span class="sh_symbol">(</span> navbar<span class="sh_symbol">,</span> <span class="sh_string">'close'</span> <span class="sh_symbol">)</span> <span class="sh_symbol">)</span> <span class="sh_cbracket">{</span></li><li>            classie<span class="sh_symbol">.</span><span class="sh_function">add</span><span class="sh_symbol">(</span> navbar<span class="sh_symbol">,</span> <span class="sh_string">'open'</span> <span class="sh_symbol">);</span></li><li>        <span class="sh_cbracket">}</span></li><li>    <span class="sh_cbracket">}</span></li><li></li><li>    triggerBttn<span class="sh_symbol">.</span><span class="sh_function">addEventListener</span><span class="sh_symbol">(</span> <span class="sh_string">'click'</span><span class="sh_symbol">,</span> toggleOverlay <span class="sh_symbol">);</span></li><li>    closeBttn<span class="sh_symbol">.</span><span class="sh_function">addEventListener</span><span class="sh_symbol">(</span> <span class="sh_string">'click'</span><span class="sh_symbol">,</span> toggleOverlay <span class="sh_symbol">);</span></li><li>    <span class="sh_comment">// navClick.addEventListener( 'click', toggleOverlay );</span></li><li>    $<span class="sh_symbol">(</span><span class="sh_string">'section.navbar nav ul li a'</span><span class="sh_symbol">).</span><span class="sh_function">click</span><span class="sh_symbol">(</span><span class="sh_keyword">function</span><span class="sh_symbol">()</span><span class="sh_cbracket">{</span></li><li>        <span class="sh_function">toggleOverlay</span><span class="sh_symbol">();</span></li><li>    <span class="sh_cbracket">}</span><span class="sh_symbol">);</span></li><li></li><li></li><li>    <span class="sh_comment">//prepare video</span></li><li>    $<span class="sh_symbol">(</span><span class="sh_string">'.video'</span><span class="sh_symbol">).</span><span class="sh_function">height</span><span class="sh_symbol">(</span>$<span class="sh_symbol">(</span>window<span class="sh_symbol">).</span><span class="sh_function">height</span><span class="sh_symbol">());</span></li><li>    $<span class="sh_symbol">(</span><span class="sh_string">'.home-text'</span><span class="sh_symbol">).</span><span class="sh_function">css</span><span class="sh_symbol">(</span><span class="sh_string">'top'</span><span class="sh_symbol">,</span>$<span class="sh_symbol">(</span>window<span class="sh_symbol">).</span><span class="sh_function">height</span><span class="sh_symbol">()/</span><span class="sh_number">3.5</span><span class="sh_symbol">+</span><span class="sh_string">'px'</span><span class="sh_symbol">);</span>    </li><li></li><li>    $<span class="sh_symbol">(</span>window<span class="sh_symbol">).</span><span class="sh_function">resize</span><span class="sh_symbol">(</span><span class="sh_keyword">function</span><span class="sh_symbol">()</span> <span class="sh_cbracket">{</span></li><li>        $<span class="sh_symbol">(</span><span class="sh_string">'.video'</span><span class="sh_symbol">).</span><span class="sh_function">height</span><span class="sh_symbol">(</span>$<span class="sh_symbol">(</span>window<span class="sh_symbol">).</span><span class="sh_function">height</span><span class="sh_symbol">());</span></li><li>        $<span class="sh_symbol">(</span><span class="sh_string">'.home-text'</span><span class="sh_symbol">).</span><span class="sh_function">css</span><span class="sh_symbol">(</span><span class="sh_string">'top'</span><span class="sh_symbol">,</span>$<span class="sh_symbol">(</span>window<span class="sh_symbol">).</span><span class="sh_function">height</span><span class="sh_symbol">()/</span><span class="sh_number">3.5</span><span class="sh_symbol">+</span><span class="sh_string">'px'</span><span class="sh_symbol">);</span></li><li>    <span class="sh_cbracket">}</span><span class="sh_symbol">);</span></li><li>    $<span class="sh_symbol">(</span><span class="sh_string">'.video .cont'</span><span class="sh_symbol">).</span><span class="sh_function">addClass</span><span class="sh_symbol">(</span><span class="sh_string">'visible'</span><span class="sh_symbol">);</span></li><li>    </li><li>    <span class="sh_function">setTimeout</span><span class="sh_symbol">(</span><span class="sh_keyword">function</span><span class="sh_symbol">()</span> <span class="sh_cbracket">{</span></li><li>        $<span class="sh_symbol">(</span><span class="sh_string">'.video .sdf, .video .suys, .video .arrow'</span><span class="sh_symbol">).</span><span class="sh_function">addClass</span><span class="sh_symbol">(</span><span class="sh_string">'visible'</span><span class="sh_symbol">);</span></li><li>    <span class="sh_cbracket">}</span><span class="sh_symbol">,</span> <span class="sh_number">2000</span><span class="sh_symbol">);</span></li><li></li><li>    <span class="sh_comment">//bg video</span></li><li>    $<span class="sh_symbol">.</span><span class="sh_function">backgroundVideo</span><span class="sh_symbol">(</span>$<span class="sh_symbol">(</span><span class="sh_string">'#bg-video'</span><span class="sh_symbol">),</span> <span class="sh_cbracket">{</span></li><li>        <span class="sh_string">"align"</span><span class="sh_symbol">:</span> <span class="sh_string">"centerXY"</span><span class="sh_symbol">,</span>         </li><li>        <span class="sh_string">"width"</span><span class="sh_symbol">:</span> <span class="sh_number">846</span><span class="sh_symbol">,</span></li><li>        <span class="sh_string">"height"</span><span class="sh_symbol">:</span> <span class="sh_number">476</span><span class="sh_symbol">,</span></li><li>        <span class="sh_string">"path"</span><span class="sh_symbol">:</span> <span class="sh_string">"media/"</span><span class="sh_symbol">,</span>        </li><li>        <span class="sh_string">"filename"</span><span class="sh_symbol">:</span> <span class="sh_string">"business-discussion-converted"</span><span class="sh_symbol">,</span> <span class="sh_comment">// You can change video name from here you want to use</span></li><li>        <span class="sh_string">"types"</span><span class="sh_symbol">:</span> <span class="sh_symbol">[</span><span class="sh_string">"mp4"</span><span class="sh_symbol">,</span> <span class="sh_string">"ogg"</span><span class="sh_symbol">,</span> <span class="sh_string">"webm"</span><span class="sh_symbol">]</span></li><li>    <span class="sh_cbracket">}</span><span class="sh_symbol">);</span></li><li>    </li><li>    <span class="sh_comment">//play video</span></li><li>    $<span class="sh_symbol">(</span><span class="sh_string">'.video .play'</span><span class="sh_symbol">).</span><span class="sh_function">click</span><span class="sh_symbol">(</span><span class="sh_keyword">function</span><span class="sh_symbol">()</span> <span class="sh_cbracket">{</span></li><li>        <span class="sh_comment">//stop the video</span></li><li>        <span class="sh_keyword">if</span> <span class="sh_symbol">(!</span>window<span class="sh_symbol">.</span>isMobile<span class="sh_symbol">)</span><span class="sh_cbracket">{</span></li><li>            $<span class="sh_symbol">(</span><span class="sh_string">'body'</span><span class="sh_symbol">).</span><span class="sh_function">addClass</span><span class="sh_symbol">(</span><span class="sh_string">'noscroll'</span><span class="sh_symbol">).</span><span class="sh_function">append</span><span class="sh_symbol">(</span><span class="sh_string">'&lt;div class="previewer"&gt;&lt;div&gt;&lt;iframe src="//player.vimeo.com/video/81676731?title=0&amp;amp;byline=0&amp;amp;portrait=0&amp;amp;color=ffffff&amp;amp;autoplay=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;div class="close"&gt;&lt;/div&gt;&lt;/div&gt;'</span><span class="sh_symbol">);</span></li><li>    </li><li>            <span class="sh_comment">//pause video</span></li><li>            $<span class="sh_symbol">(</span><span class="sh_string">'body'</span><span class="sh_symbol">).</span><span class="sh_function">addClass</span><span class="sh_symbol">(</span><span class="sh_string">'paused'</span><span class="sh_symbol">);</span></li><li>            </li><li>            $<span class="sh_symbol">(</span><span class="sh_string">'.previewer'</span><span class="sh_symbol">).</span><span class="sh_function">click</span><span class="sh_symbol">(</span><span class="sh_keyword">function</span><span class="sh_symbol">()</span> <span class="sh_cbracket">{</span></li><li>                $<span class="sh_symbol">(</span><span class="sh_string">'body'</span><span class="sh_symbol">).</span><span class="sh_function">removeClass</span><span class="sh_symbol">(</span><span class="sh_string">'noscroll'</span><span class="sh_symbol">);</span></li><li>                $<span class="sh_symbol">(</span><span class="sh_keyword">this</span><span class="sh_symbol">).</span><span class="sh_function">remove</span><span class="sh_symbol">();</span></li><li>                </li><li>                <span class="sh_comment">//play video back</span></li><li>                $<span class="sh_symbol">(</span><span class="sh_string">'body'</span><span class="sh_symbol">).</span><span class="sh_function">removeClass</span><span class="sh_symbol">(</span><span class="sh_string">'paused'</span><span class="sh_symbol">);</span></li><li>            <span class="sh_cbracket">}</span><span class="sh_symbol">);</span></li><li>            <span class="sh_keyword">return</span> <span class="sh_keyword">false</span><span class="sh_symbol">;</span></li><li>        <span class="sh_cbracket">}</span></li><li>    <span class="sh_cbracket">}</span><span class="sh_symbol">);</span></li><li></li><li>    <span class="sh_comment">//rotate text</span></li><li>    $<span class="sh_symbol">(</span><span class="sh_string">".rotate-fade"</span><span class="sh_symbol">).</span><span class="sh_function">textrotator</span><span class="sh_symbol">(</span><span class="sh_cbracket">{</span></li><li>        animation<span class="sh_symbol">:</span> <span class="sh_string">"fade"</span><span class="sh_symbol">,</span></li><li>        speed<span class="sh_symbol">:</span> <span class="sh_number">1000</span></li><li>      <span class="sh_cbracket">}</span><span class="sh_symbol">);</span></li><li>      $<span class="sh_symbol">(</span><span class="sh_string">".rotate-flip"</span><span class="sh_symbol">).</span><span class="sh_function">textrotator</span><span class="sh_symbol">(</span><span class="sh_cbracket">{</span></li><li>        animation<span class="sh_symbol">:</span> <span class="sh_string">"flip"</span><span class="sh_symbol">,</span></li><li>        speed<span class="sh_symbol">:</span> <span class="sh_number">1250</span></li><li>      <span class="sh_cbracket">}</span><span class="sh_symbol">);</span></li><li>      $<span class="sh_symbol">(</span><span class="sh_string">".rotate-flipCube"</span><span class="sh_symbol">).</span><span class="sh_function">textrotator</span><span class="sh_symbol">(</span><span class="sh_cbracket">{</span></li><li>        animation<span class="sh_symbol">:</span> <span class="sh_string">"flipCube"</span><span class="sh_symbol">,</span></li><li>        speed<span class="sh_symbol">:</span> <span class="sh_number">1500</span></li><li>      <span class="sh_cbracket">}</span><span class="sh_symbol">);</span></li><li>      $<span class="sh_symbol">(</span><span class="sh_string">".rotate-flipUp"</span><span class="sh_symbol">).</span><span class="sh_function">textrotator</span><span class="sh_symbol">(</span><span class="sh_cbracket">{</span></li><li>        animation<span class="sh_symbol">:</span> <span class="sh_string">"flipUp"</span><span class="sh_symbol">,</span></li><li>        speed<span class="sh_symbol">:</span> <span class="sh_number">1750</span></li><li>      <span class="sh_cbracket">}</span><span class="sh_symbol">);</span></li><li>      $<span class="sh_symbol">(</span><span class="sh_string">".rotate-spin"</span><span class="sh_symbol">).</span><span class="sh_function">textrotator</span><span class="sh_symbol">(</span><span class="sh_cbracket">{</span></li><li>        animation<span class="sh_symbol">:</span> <span class="sh_string">"spin"</span><span class="sh_symbol">,</span></li><li>        speed<span class="sh_symbol">:</span> <span class="sh_number">2000</span></li><li>    <span class="sh_cbracket">}</span><span class="sh_symbol">);</span></li><li></li><li>    <span class="sh_comment">// grid gallery (Portfolio)</span></li><li>    <span class="sh_keyword">new</span> <span class="sh_function">CBPGridGallery</span><span class="sh_symbol">(</span> document<span class="sh_symbol">.</span><span class="sh_function">getElementById</span><span class="sh_symbol">(</span> <span class="sh_string">'grid-gallery'</span> <span class="sh_symbol">)</span> <span class="sh_symbol">);</span></li><li></li><li>    <span class="sh_comment">// Carousel</span></li><li>    $<span class="sh_symbol">(</span><span class="sh_string">"#work-slider"</span><span class="sh_symbol">).</span><span class="sh_function">owlCarousel</span><span class="sh_symbol">(</span><span class="sh_cbracket">{</span> </li><li>      navigation <span class="sh_symbol">:</span> <span class="sh_keyword">true</span><span class="sh_symbol">,</span> <span class="sh_comment">// Show next and prev buttons</span></li><li>      slideSpeed <span class="sh_symbol">:</span> <span class="sh_number">300</span><span class="sh_symbol">,</span></li><li>      paginationSpeed <span class="sh_symbol">:</span> <span class="sh_number">400</span><span class="sh_symbol">,</span></li><li>      singleItem<span class="sh_symbol">:</span><span class="sh_keyword">true</span>       </li><li>    <span class="sh_cbracket">}</span><span class="sh_symbol">);</span></li><li></li><li>    $<span class="sh_symbol">(</span><span class="sh_string">"#testimonial-slider"</span><span class="sh_symbol">).</span><span class="sh_function">owlCarousel</span><span class="sh_symbol">(</span><span class="sh_cbracket">{</span> </li><li>      navigation <span class="sh_symbol">:</span> <span class="sh_keyword">true</span><span class="sh_symbol">,</span> <span class="sh_comment">// Show next and prev buttons</span></li><li>      slideSpeed <span class="sh_symbol">:</span> <span class="sh_number">300</span><span class="sh_symbol">,</span></li><li>      paginationSpeed <span class="sh_symbol">:</span> <span class="sh_number">400</span><span class="sh_symbol">,</span></li><li>      singleItem<span class="sh_symbol">:</span><span class="sh_keyword">true</span>       </li><li>    <span class="sh_cbracket">}</span><span class="sh_symbol">);</span></li><li></li><li>    </li><li>    <span class="sh_comment">//Counter Up</span></li><li>    $<span class="sh_symbol">(</span><span class="sh_string">'.counter'</span><span class="sh_symbol">).</span><span class="sh_function">counterUp</span><span class="sh_symbol">(</span><span class="sh_cbracket">{</span></li><li>        delay<span class="sh_symbol">:</span> <span class="sh_number">5</span><span class="sh_symbol">,</span></li><li>        time<span class="sh_symbol">:</span> <span class="sh_number">800</span></li><li>    <span class="sh_cbracket">}</span><span class="sh_symbol">);</span></li><li></li><li>    <span class="sh_comment">//theme style switcher</span></li><li>    $<span class="sh_symbol">(</span><span class="sh_string">'#theme-customizer .cog'</span><span class="sh_symbol">).</span><span class="sh_function">click</span><span class="sh_symbol">(</span><span class="sh_keyword">function</span><span class="sh_symbol">()</span><span class="sh_cbracket">{</span></li><li>        $<span class="sh_symbol">(</span><span class="sh_string">'#theme-options'</span><span class="sh_symbol">).</span><span class="sh_function">slideToggle</span><span class="sh_symbol">(</span><span class="sh_string">"slow"</span><span class="sh_symbol">)</span></li><li>    <span class="sh_cbracket">}</span><span class="sh_symbol">);</span></li><li></li><li>    <span class="sh_comment">// Ajax working contact form</span></li><li>    $<span class="sh_symbol">(</span><span class="sh_string">"#submit"</span><span class="sh_symbol">).</span><span class="sh_function">click</span><span class="sh_symbol">(</span><span class="sh_keyword">function</span><span class="sh_symbol">()</span> <span class="sh_cbracket">{</span> </li><li>        <span class="sh_comment">//get input field values</span></li><li>        <span class="sh_keyword">var</span> user_name       <span class="sh_symbol">=</span> $<span class="sh_symbol">(</span><span class="sh_string">'input[name=name]'</span><span class="sh_symbol">).</span><span class="sh_function">val</span><span class="sh_symbol">();</span> </li><li>        <span class="sh_keyword">var</span> user_email      <span class="sh_symbol">=</span> $<span class="sh_symbol">(</span><span class="sh_string">'input[name=email]'</span><span class="sh_symbol">).</span><span class="sh_function">val</span><span class="sh_symbol">();</span></li><li>        <span class="sh_keyword">var</span> user_phone      <span class="sh_symbol">=</span> $<span class="sh_symbol">(</span><span class="sh_string">'input[name=phone]'</span><span class="sh_symbol">).</span><span class="sh_function">val</span><span class="sh_symbol">();</span></li><li>        <span class="sh_keyword">var</span> user_message    <span class="sh_symbol">=</span> $<span class="sh_symbol">(</span><span class="sh_string">'textarea[name=message]'</span><span class="sh_symbol">).</span><span class="sh_function">val</span><span class="sh_symbol">();</span></li><li>        </li><li>        <span class="sh_comment">//simple validation at client's end</span></li><li>        <span class="sh_comment">//we simply change border color to red if empty field using .css()</span></li><li>        <span class="sh_keyword">var</span> proceed <span class="sh_symbol">=</span> <span class="sh_keyword">true</span><span class="sh_symbol">;</span></li><li>        <span class="sh_keyword">if</span><span class="sh_symbol">(</span>user_name<span class="sh_symbol">==</span><span class="sh_string">""</span><span class="sh_symbol">)</span><span class="sh_cbracket">{</span> </li><li>            $<span class="sh_symbol">(</span><span class="sh_string">'input[name=name]'</span><span class="sh_symbol">).</span><span class="sh_function">css</span><span class="sh_symbol">(</span><span class="sh_string">'border-color'</span><span class="sh_symbol">,</span><span class="sh_string">'red'</span><span class="sh_symbol">);</span> </li><li>            proceed <span class="sh_symbol">=</span> <span class="sh_keyword">false</span><span class="sh_symbol">;</span></li><li>        <span class="sh_cbracket">}</span></li><li>        <span class="sh_keyword">if</span><span class="sh_symbol">(</span>user_email<span class="sh_symbol">==</span><span class="sh_string">""</span><span class="sh_symbol">)</span><span class="sh_cbracket">{</span> </li><li>            $<span class="sh_symbol">(</span><span class="sh_string">'input[name=email]'</span><span class="sh_symbol">).</span><span class="sh_function">css</span><span class="sh_symbol">(</span><span class="sh_string">'border-color'</span><span class="sh_symbol">,</span><span class="sh_string">'red'</span><span class="sh_symbol">);</span> </li><li>            proceed <span class="sh_symbol">=</span> <span class="sh_keyword">false</span><span class="sh_symbol">;</span></li><li>        <span class="sh_cbracket">}</span></li><li>        <span class="sh_keyword">if</span><span class="sh_symbol">(</span>user_phone<span class="sh_symbol">==</span><span class="sh_string">""</span><span class="sh_symbol">)</span> <span class="sh_cbracket">{</span>    </li><li>            $<span class="sh_symbol">(</span><span class="sh_string">'input[name=phone]'</span><span class="sh_symbol">).</span><span class="sh_function">css</span><span class="sh_symbol">(</span><span class="sh_string">'border-color'</span><span class="sh_symbol">,</span><span class="sh_string">'red'</span><span class="sh_symbol">);</span> </li><li>            proceed <span class="sh_symbol">=</span> <span class="sh_keyword">false</span><span class="sh_symbol">;</span></li><li>        <span class="sh_cbracket">}</span></li><li>        <span class="sh_keyword">if</span><span class="sh_symbol">(</span>user_message<span class="sh_symbol">==</span><span class="sh_string">""</span><span class="sh_symbol">)</span> <span class="sh_cbracket">{</span>  </li><li>            $<span class="sh_symbol">(</span><span class="sh_string">'textarea[name=message]'</span><span class="sh_symbol">).</span><span class="sh_function">css</span><span class="sh_symbol">(</span><span class="sh_string">'border-color'</span><span class="sh_symbol">,</span><span class="sh_string">'red'</span><span class="sh_symbol">);</span> </li><li>            proceed <span class="sh_symbol">=</span> <span class="sh_keyword">false</span><span class="sh_symbol">;</span></li><li>        <span class="sh_cbracket">}</span></li><li></li><li>        <span class="sh_comment">//everything looks good! lets proceed</span></li><li>        <span class="sh_keyword">if</span><span class="sh_symbol">(</span>proceed<span class="sh_symbol">)</span> </li><li>        <span class="sh_cbracket">{</span></li><li>            <span class="sh_comment">//data to be sent to server</span></li><li>            post_data <span class="sh_symbol">=</span> <span class="sh_cbracket">{</span><span class="sh_string">'userName'</span><span class="sh_symbol">:</span>user_name<span class="sh_symbol">,</span> <span class="sh_string">'userEmail'</span><span class="sh_symbol">:</span>user_email<span class="sh_symbol">,</span> <span class="sh_string">'userPhone'</span><span class="sh_symbol">:</span>user_phone<span class="sh_symbol">,</span> <span class="sh_string">'userMessage'</span><span class="sh_symbol">:</span>user_message<span class="sh_cbracket">}</span><span class="sh_symbol">;</span></li><li>            </li><li>            <span class="sh_comment">//Ajax post data to server</span></li><li>            $<span class="sh_symbol">.</span><span class="sh_function">post</span><span class="sh_symbol">(</span><span class="sh_string">'include/contact.php'</span><span class="sh_symbol">,</span> post_data<span class="sh_symbol">,</span> <span class="sh_keyword">function</span><span class="sh_symbol">(</span>response<span class="sh_symbol">)</span><span class="sh_cbracket">{</span>  </li><li>                </li><li>                <span class="sh_comment">//load json data from server and output message     </span></li><li>                <span class="sh_keyword">if</span><span class="sh_symbol">(</span>response<span class="sh_symbol">.</span>type <span class="sh_symbol">==</span> <span class="sh_string">'error'</span><span class="sh_symbol">)</span></li><li>                <span class="sh_cbracket">{</span></li><li>                    output <span class="sh_symbol">=</span> <span class="sh_string">'&lt;div class="error"&gt;'</span><span class="sh_symbol">+</span>response<span class="sh_symbol">.</span>text<span class="sh_symbol">+</span><span class="sh_string">'&lt;/div&gt;'</span><span class="sh_symbol">;</span></li><li>                <span class="sh_cbracket">}</span><span class="sh_keyword">else</span><span class="sh_cbracket">{</span></li><li>                </li><li>                    output <span class="sh_symbol">=</span> <span class="sh_string">'&lt;div class="success"&gt;'</span><span class="sh_symbol">+</span>response<span class="sh_symbol">.</span>text<span class="sh_symbol">+</span><span class="sh_string">'&lt;/div&gt;'</span><span class="sh_symbol">;</span></li><li>                    </li><li>                    <span class="sh_comment">//reset values in all input fields</span></li><li>                    $<span class="sh_symbol">(</span><span class="sh_string">'#contact_form input'</span><span class="sh_symbol">).</span><span class="sh_function">val</span><span class="sh_symbol">(</span><span class="sh_string">''</span><span class="sh_symbol">);</span> </li><li>                    $<span class="sh_symbol">(</span><span class="sh_string">'#contact_form textarea'</span><span class="sh_symbol">).</span><span class="sh_function">val</span><span class="sh_symbol">(</span><span class="sh_string">''</span><span class="sh_symbol">);</span> </li><li>                <span class="sh_cbracket">}</span></li><li>                </li><li>                $<span class="sh_symbol">(</span><span class="sh_string">"#form_result"</span><span class="sh_symbol">).</span><span class="sh_function">hide</span><span class="sh_symbol">().</span><span class="sh_function">html</span><span class="sh_symbol">(</span>output<span class="sh_symbol">).</span><span class="sh_function">slideDown</span><span class="sh_symbol">();</span></li><li>            <span class="sh_cbracket">}</span><span class="sh_symbol">,</span> <span class="sh_string">'json'</span><span class="sh_symbol">);</span></li><li>            </li><li>        <span class="sh_cbracket">}</span></li><li>    <span class="sh_cbracket">}</span><span class="sh_symbol">);</span></li><li>    </li><li>    <span class="sh_comment">//reset previously set border colors and hide all message on .keyup()</span></li><li>    $<span class="sh_symbol">(</span><span class="sh_string">"#contact_form input, #contact_form textarea"</span><span class="sh_symbol">).</span><span class="sh_function">keyup</span><span class="sh_symbol">(</span><span class="sh_keyword">function</span><span class="sh_symbol">()</span> <span class="sh_cbracket">{</span> </li><li>        $<span class="sh_symbol">(</span><span class="sh_string">"#contact_form input, #contact_form textarea"</span><span class="sh_symbol">).</span><span class="sh_function">css</span><span class="sh_symbol">(</span><span class="sh_string">'border-color'</span><span class="sh_symbol">,</span><span class="sh_string">''</span><span class="sh_symbol">);</span> </li><li>        $<span class="sh_symbol">(</span><span class="sh_string">"#form_result"</span><span class="sh_symbol">).</span><span class="sh_function">slideUp</span><span class="sh_symbol">();</span></li><li>    <span class="sh_cbracket">}</span><span class="sh_symbol">);</span></li><li></li><li></li><li><span class="sh_cbracket">}</span><span class="sh_symbol">);</span></li><li></li><li></li><li><span class="sh_comment">// Google Maps</span></li><li>google<span class="sh_symbol">.</span>maps<span class="sh_symbol">.</span>event<span class="sh_symbol">.</span><span class="sh_function">addDomListener</span><span class="sh_symbol">(</span>window<span class="sh_symbol">,</span> <span class="sh_string">'load'</span><span class="sh_symbol">,</span> showmap<span class="sh_symbol">);</span></li><li><span class="sh_keyword">function</span> <span class="sh_function">showmap</span><span class="sh_symbol">()</span> <span class="sh_cbracket">{</span></li><li>    <span class="sh_keyword">var</span> myLatlng <span class="sh_symbol">=</span> <span class="sh_keyword">new</span> google<span class="sh_symbol">.</span>maps<span class="sh_symbol">.</span><span class="sh_function">LatLng</span><span class="sh_symbol">(</span><span class="sh_number">40.6700</span><span class="sh_symbol">,</span> <span class="sh_symbol">-</span><span class="sh_number">73.9400</span><span class="sh_symbol">);</span> <span class="sh_comment">// New York</span></li><li>    <span class="sh_keyword">var</span> mapOptions <span class="sh_symbol">=</span> <span class="sh_cbracket">{</span></li><li>        <span class="sh_comment">// How zoomed in you want the map to start at (always required)</span></li><li>        zoom<span class="sh_symbol">:</span> <span class="sh_number">12</span><span class="sh_symbol">,</span></li><li>        <span class="sh_comment">// The latitude and longitude to center the map (always required)</span></li><li>        center<span class="sh_symbol">:</span> myLatlng<span class="sh_symbol">,</span> <span class="sh_comment">// New York</span></li><li>        <span class="sh_comment">// How you would like to style the map.         </span></li><li>        styles<span class="sh_symbol">:</span> <span class="sh_symbol">[</span><span class="sh_cbracket">{</span>featureType<span class="sh_symbol">:</span><span class="sh_string">'all'</span><span class="sh_symbol">,</span>stylers<span class="sh_symbol">:[</span><span class="sh_cbracket">{</span>saturation<span class="sh_symbol">:-</span><span class="sh_number">100</span><span class="sh_cbracket">}</span><span class="sh_symbol">,</span><span class="sh_cbracket">{</span>gamma<span class="sh_symbol">:</span><span class="sh_number">0.50</span><span class="sh_cbracket">}</span><span class="sh_symbol">]</span><span class="sh_cbracket">}</span><span class="sh_symbol">]</span></li><li>    <span class="sh_cbracket">}</span><span class="sh_symbol">;</span></li><li>    </li><li>    <span class="sh_comment">// We are using a div with id="map" seen below in the &lt;body&gt;</span></li><li>    <span class="sh_keyword">var</span> map <span class="sh_symbol">=</span> <span class="sh_keyword">new</span> google<span class="sh_symbol">.</span>maps<span class="sh_symbol">.</span><span class="sh_function">Map</span><span class="sh_symbol">(</span>document<span class="sh_symbol">.</span><span class="sh_function">getElementById</span><span class="sh_symbol">(</span><span class="sh_string">'map'</span><span class="sh_symbol">),</span> mapOptions<span class="sh_symbol">);</span></li><li>    <span class="sh_keyword">var</span> image <span class="sh_symbol">=</span> <span class="sh_cbracket">{</span></li><li>        url<span class="sh_symbol">:</span> <span class="sh_string">'https://themeselection.com/demo/ashoka-html-template/images/map-marker.png'</span><span class="sh_symbol">,</span></li><li>        origin<span class="sh_symbol">:</span> <span class="sh_keyword">new</span> google<span class="sh_symbol">.</span>maps<span class="sh_symbol">.</span><span class="sh_function">Point</span><span class="sh_symbol">(</span><span class="sh_number">0</span><span class="sh_symbol">,</span> <span class="sh_number">0</span><span class="sh_symbol">),</span></li><li>        anchor<span class="sh_symbol">:</span> <span class="sh_keyword">new</span> google<span class="sh_symbol">.</span>maps<span class="sh_symbol">.</span><span class="sh_function">Point</span><span class="sh_symbol">(</span><span class="sh_number">12</span><span class="sh_symbol">,</span> <span class="sh_number">59</span><span class="sh_symbol">)</span></li><li>    <span class="sh_cbracket">}</span><span class="sh_symbol">;</span>    </li><li>    <span class="sh_keyword">var</span> marker <span class="sh_symbol">=</span> <span class="sh_keyword">new</span> google<span class="sh_symbol">.</span>maps<span class="sh_symbol">.</span><span class="sh_function">Marker</span><span class="sh_symbol">(</span><span class="sh_cbracket">{</span></li><li>        position<span class="sh_symbol">:</span> myLatlng<span class="sh_symbol">,</span></li><li>        map<span class="sh_symbol">:</span> map<span class="sh_symbol">,</span></li><li>        icon<span class="sh_symbol">:</span> image<span class="sh_symbol">,</span></li><li>        </li><li>    <span class="sh_cbracket">}</span><span class="sh_symbol">);</span></li><li><span class="sh_cbracket">}</span></li></ol></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;" tabindex="0" contenteditable="">$(function(){
+      //Logo fadeIn fadeOut on
+      $(window).scroll(function(){
+      if($(this).scrollTop() &gt; $(window).height()/2.2) $('.logo-wrapper').fadeOut('slow');
+      if($(this).scrollTop() &lt; $(window).height()/2.2) $('.logo-wrapper').fadeIn('slow');
+      });
+      //Using the smooth scroll for smooth navigation
+      smoothScroll.init();
+      smoothScroll.init({
+      speed: 500, // Integer. How fast to complete the scroll in milliseconds
+      easing: 'easeInOutCubic', // Easing pattern to use
+      updateURL: false, // Boolean. Whether or not to update the URL with the anchor hash on scroll
+      offset: 0, // Integer. How far to offset the scrolling anchor location in pixels
+      callbackBefore: function ( toggle, anchor ) {}, // Function to run before scrolling
+      callbackAfter: function ( toggle, anchor ) {} // Function to run after scrolling
+      });
+      //wow animation by using with animate css
+      if($(window).width() &gt; 480) {
+      var wow = new WOW(
+      {
+      boxClass:     'wow',
+      animateClass: 'animated',
+      offset:       0,
+      mobile:       true
+      }
+      );
+      wow.init();
+      }
+      // Full screen navigations
+      var triggerBttn = document.getElementById( 'trigger-navbar' ),
+      navbar = document.querySelector( 'section.navbar' ),
+      closeBttn = navbar.querySelector( 'a.navbar-close' );
+      navClick = navbar.querySelector( 'section.navbar nav ul li a' );
+      transEndEventNames = {
+      'WebkitTransition': 'webkitTransitionEnd',
+      'MozTransition': 'transitionend',
+      'OTransition': 'oTransitionEnd',
+      'msTransition': 'MSTransitionEnd',
+      'transition': 'transitionend'
+      },
+      transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
+      support = { transitions : Modernizr.csstransitions };
+      function toggleOverlay() {
+      if( classie.has( navbar, 'open' ) ) {
+      classie.remove( navbar, 'open' );
+      classie.add( navbar, 'close' );
+      var onEndTransitionFn = function( ev ) {
+      if( support.transitions ) {
+      if( ev.propertyName !== 'visibility' ) return;
+      this.removeEventListener( transEndEventName, onEndTransitionFn );
+      }
+      classie.remove( navbar, 'close' );
+      };
+      if( support.transitions ) {
+      navbar.addEventListener( transEndEventName, onEndTransitionFn );
+      }
+      else {
+      onEndTransitionFn();
+      }
+      }
+      else if( !classie.has( navbar, 'close' ) ) {
+      classie.add( navbar, 'open' );
+      }
+      }
+      triggerBttn.addEventListener( 'click', toggleOverlay );
+      closeBttn.addEventListener( 'click', toggleOverlay );
+      // navClick.addEventListener( 'click', toggleOverlay );
+      $('section.navbar nav ul li a').click(function(){
+      toggleOverlay();
+      });
+      //prepare video
+      $('.video').height($(window).height());
+      $('.home-text').css('top',$(window).height()/3.5+'px');
+      $(window).resize(function() {
+      $('.video').height($(window).height());
+      $('.home-text').css('top',$(window).height()/3.5+'px');
+      });
+      $('.video .cont').addClass('visible');
+
+      setTimeout(function() {
+      $('.video .sdf, .video .suys, .video .arrow').addClass('visible');
+      }, 2000);
+      //bg video
+      $.backgroundVideo($('#bg-video'), {
+      "align": "centerXY",
+      "width": 846,
+      "height": 476,
+      "path": "media/",
+      "filename": "business-discussion-converted", // You can change video name from here you want to use
+      "types": ["mp4", "ogg", "webm"]
+      });
+
+      //play video
+      $('.video .play').click(function() {
+      //stop the video
+      if (!window.isMobile){
+      $('body').addClass('noscroll').append('&lt;div class="previewer"&gt;&lt;div&gt;&lt;iframe src="//player.vimeo.com/video/81676731?title=0&amp;amp;byline=0&amp;amp;portrait=0&amp;amp;color=ffffff&amp;amp;autoplay=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;div class="close"&gt;&lt;/div&gt;&lt;/div&gt;');
+
+      //pause video
+      $('body').addClass('paused');
+
+      $('.previewer').click(function() {
+      $('body').removeClass('noscroll');
+      $(this).remove();
+
+      //play video back
+      $('body').removeClass('paused');
+      });
+      return false;
+      }
+      });
+      //rotate text
+      $(".rotate-fade").textrotator({
+      animation: "fade",
+      speed: 1000
+      });
+      $(".rotate-flip").textrotator({
+      animation: "flip",
+      speed: 1250
+      });
+      $(".rotate-flipCube").textrotator({
+      animation: "flipCube",
+      speed: 1500
+      });
+      $(".rotate-flipUp").textrotator({
+      animation: "flipUp",
+      speed: 1750
+      });
+      $(".rotate-spin").textrotator({
+      animation: "spin",
+      speed: 2000
+      });
+      // grid gallery (Portfolio)
+      new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
+      // Carousel
+      $("#work-slider").owlCarousel({
+      navigation : true, // Show next and prev buttons
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem:true
+      });
+      $("#testimonial-slider").owlCarousel({
+      navigation : true, // Show next and prev buttons
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem:true
+      });
+
+      //Counter Up
+      $('.counter').counterUp({
+      delay: 5,
+      time: 800
+      });
+      //theme style switcher
+      $('#theme-customizer .cog').click(function(){
+      $('#theme-options').slideToggle("slow")
+      });
+      // Ajax working contact form
+      $("#submit").click(function() {
+      //get input field values
+      var user_name       = $('input[name=name]').val();
+      var user_email      = $('input[name=email]').val();
+      var user_phone      = $('input[name=phone]').val();
+      var user_message    = $('textarea[name=message]').val();
+
+      //simple validation at client's end
+      //we simply change border color to red if empty field using .css()
+      var proceed = true;
+      if(user_name==""){
+      $('input[name=name]').css('border-color','red');
+      proceed = false;
+      }
+      if(user_email==""){
+      $('input[name=email]').css('border-color','red');
+      proceed = false;
+      }
+      if(user_phone=="") {
+      $('input[name=phone]').css('border-color','red');
+      proceed = false;
+      }
+      if(user_message=="") {
+      $('textarea[name=message]').css('border-color','red');
+      proceed = false;
+      }
+      //everything looks good! lets proceed
+      if(proceed)
+      {
+      //data to be sent to server
+      post_data = {'userName':user_name, 'userEmail':user_email, 'userPhone':user_phone, 'userMessage':user_message};
+
+      //Ajax post data to server
+      $.post('include/contact.php', post_data, function(response){
+
+      //load json data from server and output message
+      if(response.type == 'error')
+      {
+      output = '&lt;div class="error"&gt;'+response.text+'&lt;/div&gt;';
+      }else{
+
+      output = '&lt;div class="success"&gt;'+response.text+'&lt;/div&gt;';
+
+      //reset values in all input fields
+      $('#contact_form input').val('');
+      $('#contact_form textarea').val('');
+      }
+
+      $("#form_result").hide().html(output).slideDown();
+      }, 'json');
+
+      }
+      });
+
+      //reset previously set border colors and hide all message on .keyup()
+      $("#contact_form input, #contact_form textarea").keyup(function() {
+      $("#contact_form input, #contact_form textarea").css('border-color','');
+      $("#form_result").slideUp();
+      });
+      });
+      // Google Maps
+      google.maps.event.addDomListener(window, 'load', showmap);
+      function showmap() {
+      var myLatlng = new google.maps.LatLng(40.6700, -73.9400); // New York
+      var mapOptions = {
+      // How zoomed in you want the map to start at (always required)
+      zoom: 12,
+      // The latitude and longitude to center the map (always required)
+      center: myLatlng, // New York
+      // How you would like to style the map.
+      styles: [{featureType:'all',stylers:[{saturation:-100},{gamma:0.50}]}]
+      };
+
+      // We are using a div with id="map" seen below in the &lt;body&gt;
+      var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+      var image = {
+      url: 'https://themeselection.com/demo/ashoka-html-template/images/map-marker.png',
+      origin: new google.maps.Point(0, 0),
+      anchor: new google.maps.Point(12, 59)
+      };
+      var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      icon: image,
+
+      });
+      }
+    </pre></div></div>
+  </div>
+  <div id="shortcodes" class="doc-post ">
+<h2 class="doc-heading">Contact.php</h2>
+<hr>
+    <div class="row doc-content">
+<p><i class="arrow_carrot-right_alt2"></i> There is one php file in Ashoka folder <code>Ashoka/include/contact.php</code> that contains php email script to send the mail using the theme contact form, This PHP script also have server side validations and revert success or error message.</p>
+<div class="snippet-container"><div class="sh_default snippet-wrap"><div class="snippet-menu sh_sourceCode"><a class="snippet-window sh_url" href="#">pop-up</a><a class="snippet-text sh_url" href="#">text</a></div><pre class="shi_pre sh_php snippet-formatted sh_sourceCode"><ol class="snippet-num"><li><span class="sh_variable">$to_Email</span>       <span class="sh_symbol">=</span> <span class="sh_string">"myemail@gmail.com"</span><span class="sh_symbol">;</span> <span class="sh_comment">//Replace with recipient email address</span></li><li>    <span class="sh_variable">$subject</span>        <span class="sh_symbol">=</span> <span class="sh_string">'You have new inquiry from '</span><span class="sh_symbol">.</span><span class="sh_variable">$_POST</span><span class="sh_symbol">[</span><span class="sh_string">"userName"</span><span class="sh_symbol">];</span> <span class="sh_comment">//Subject line for emails</span></li></ol></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;" tabindex="0" contenteditable="">$to_Email       = "myemail@gmail.com"; //Replace with recipient email address
+    $subject        = 'You have new inquiry from '.$_POST["userName"]; //Subject line for emails</pre></div></div>
+    </div>
+  </div>
+<hr>
+  <div id="credits" class="doc-post ">
+<h2 class="doc-heading">Credits</h2>
+<hr>
+    <div class="row doc-content">
+      <ul>
+        <li># Front-end framework :
+          <ul>
+            <li><a href="http://getbootstrap.com/">Bootstrap 3</a></li>
+          </ul>
+        </li>
+
+        <li># Images :
+          <ul>
+            <li>
+              <a href="http://unsplash.com/">Unsplash</a>
+            </li>
+          </ul>
+        </li>
+        <li># Scripts :
+          <ul>
+            <li><a href="http://jquery.com/">jQuery vendorrary</a> -
+            <a href="http://archive.plugins.jquery.com/project/Easing - http://gsgd.co.uk/sandbox/jquery/easing/">jQuery Easing Plugin</a> -
+-
+            <a href="http://isotope.metafizzy.co/">Isotope Filtering </a> -
+            <a href="http://www.ianlunn.co.uk/plugins/jquery-parallax/">Parallax </a> -
+            <a href="http://isotope.metafizzy.co/">FitText </a> -
+            <a href="http://isotope.metafizzy.co/">Magnific Popup </a> -
+            <a href="https://github.com/aterrien/jQuery-Knob">Knob </a> -
+            <a href="http://webbies.dk/SudoSlider/">SudoSlider </a> -
+            <a href="https://github.com/nicinabox/superslides">Magnific Popup </a> -
+          </li>
+        </ul>
+      </li>
+      <li># Fonts :
+        <ul>
+          <li> <a href="http://www.fontsquirrel.com/fonts/roboto">roboto font</a> </li>
+        </ul>
+      </li>
+      <li># Social Icons :
+        <ul>
+          <li><a href="http://fontawesome.io">Font Awesome 3.1.0</a> – <a href="http://fontello.com/">fontello</a> </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+<hr>
+</div>
+</div>
+</section>
+<!-- JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="js/vendor/smoothscroll.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

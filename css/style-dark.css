@@ -1,0 +1,69 @@
+/* Basic Styling
+-------------------------------------------------------------- */
+body {    
+    color: #ffffff;
+    background: #333;
+}
+h1, h2, h3, h4, h5, h6 {        
+    color: #ffffff;
+}
+.text-light{
+    color: #ffffff;
+}
+p{
+    color: #ffffff;
+}
+.dark-bg-odd{
+    background: #555;
+}
+.circle-point {
+    background: #fff;
+}
+#pre-loader {
+    background: #333;   
+}
+/* Content
+-------------------------------------------------------------- */
+
+.section-title-border{
+    border: 4px double #ffffff;
+}
+#request-pro{
+    background-color: #555;
+}
+/* Other elemets
+-------------------------------------------------------------- */
+#trigger-navbar span{
+    background: rgba(255,255,255,0.2);
+}
+.post-thinkers:before,.post-dremers:before,.post-researchers:before{
+    color:#555555;
+}
+.service-icon{
+    color: #fff;
+}
+.request-text{
+    color: #fff;   
+}
+.price-box{
+    border: 1px solid #a9a9a9;
+}
+.grid figcaption{
+    background-color: #333;
+}
+.form-control{
+    border-bottom: 1px solid #a9a9a9;
+    color: #fff;
+}
+#comments{
+    border-bottom: 1px solid #a9a9a9;
+}
+#contactform input[type=text]:focus, #contactform input#email:focus, #contactform input#phone:focus, #comments:focus{
+    background-color: #3C3C3C;
+}
+.post-title a,.post-cat a{
+    color: #a9a9a9;
+}
+.current.show p {
+    color: #333;
+}
