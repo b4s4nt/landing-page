@@ -28,10 +28,6 @@
         <link rel="stylesheet" href="css/custom.css">
         <link rel="stylesheet" href="css/vendor/animate.css">
         <link rel="stylesheet" href="css/vendor/owl.carousel.css">
-        <!--Added By Basanta , csss-->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
-        <link href="css/sticky-footer-navbar.css" rel="stylesheet">
         
 
         <!-- style switcher -->
@@ -56,14 +52,6 @@
         
         <script type="text/javascript" src="js/vendor/jquery-1.11.0.min.js"></script>        
         <script type="text/javascript" src="js/vendor/modernizr.custom.js"></script>
-
-
-        <!---Added Script Basanta -->
-        <script src="js/jquery-1.12.3.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-       <script src="js/bootstrap.min.js"></script>
-
-
         <!--[if lt IE 9]>
             <script type="text/javascript" src="js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
         <![endif]-->
@@ -590,7 +578,7 @@
                     <img src="images/portfolio/retrieval_team_by_macrebisz_dbfocxw-pre.jpg" alt="portfolio-01"/>
                     <figcaption>
                       <h3>Star Sailors: Ansible</h3>
-                      <p>An open-source Online RPG based in the Star Sailors U  niverse</p>
+                      <p>An open-source Online RPG based in the Star Sailors Universe</p>
                     </figcaption>
                   </figure>
                 </li>
@@ -605,19 +593,19 @@
                 </li>
                 <li class="wow fadeInUpBig" data-wow-duration="1.5s">
                   <figure>
-                    <img src="images/portfolio/portfolio-3.jpg" alt="portfolio-03"/>
+                    <img src="images/portfolio/tumblr_8991256ccd6c9619bda33630b6fbb282_e04f5d07_500.jpg" alt="portfolio-03"/>
                     <figcaption>
-                      <h3>Pellentesque hab</h3>
-                      <p>Pariatur food truck street art consequat sustainable</p>
+                      <h3>Online Communities</h3>
+                      <p>We take your online network and make it great</p>
                     </figcaption>
                   </figure>
                 </li>
                 <li class="wow fadeInUpBig" data-wow-duration="2s">
                   <figure>
-                    <img src="images/portfolio/portfolio-4.jpg" alt="portfolio-04"/>
+                    <img src="images/portfolio/Gizmotronn.png1.png" alt="portfolio-04"/>
                     <figcaption class="last">
-                      <h3>Lorem ipsum</h3>
-                      <p>Pariatur food truck street art consequat sustainable</p>
+                      <h3>A Crashed Rocket</h3>
+                      <p>A spacerock & power metal original album.</p>
                     </figcaption>
                   </figure>
                 </li>
@@ -952,43 +940,36 @@
               </div>            
             </div>
 
-            <!-- Container for form-->
-            <div class= "container-fuid">
-
-            <!--Gap 4 column gap from left side-->
-            <div class ="col-lg-4">
-            </div>
-            <!--Form at center with size of 4 column -->
-            <div class="col-lg-4">
-            <div class="container-fluid">
-              <form  role="form" method="post" action="include/contact.php" >
-
-                  <div class="form-group" >
-                      <label>Full Name</label>
-                      <input class="form-control" placeholder=" Enter Yor Name" name="name">
+            <div class="row">            
+              <fieldset id="contactform" class="wow bounce" data-wow-duration="2s" data-wow-delay="0.5s">                
+                <div id="form_result"></div>
+                <div class="row">
+                  <div class="col-md-6 col-md-offset-3">
+                    <input name="name" type="text" id="name" class="form-control" placeholder="Full Name">
                   </div>
-                  <div class="form-group">
-                      <label for="email ">Email Address</label>
-                      <input  type ="email"class="form-control" placeholder="Enter  Valid Email ID" name="email">
-                      <p class="form-control-static">email@example.com</p>
-                  </div>
-                  <div class="form-group" >
-                    <label>Contact Number</label>
-                    <input  type ="number" class="form-control" placeholder=" Enter Your Contact Number" name="phone">
                 </div>
-
-
-                 <div class="form-group">
-                      <label>Your Message</label>
-                      <textarea class="form-control" rows="3" name="message"></textarea>
+                <div class="row">
+                  <div class="col-md-3 col-md-offset-3">
+                    <input name="email" type="text" id="email" class="form-control" value="" placeholder="Valid email ID">
+                  </div>                
+                  <div class="col-md-3">
+                    <input name="phone" type="text" id="phone" class="form-control" value="" placeholder="Contact No">
                   </div>
-                  <button type="submit" id ="submit" class="btn btn-default">SUBMIT</button>
+                </div>
+                <div class="row">         
+                  <div class="col-md-6 col-md-offset-3">
+                    <textarea name="message" cols="40" rows="5" id="comments" class="form-control" placeholder="Your Message"></textarea>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 text-center">                    
+                      <button type="submit" class="btn btn-default btn-lg" id="submit">SUBMIT</button>
+
+                  </div>
+                </div>
+              </fieldset>
+              <!-- </form> -->
             </div>
-            </div>
-            <!--Gap 4 column gap from right side-->
-            <div class="col-lg-4">
-            </div>
-          </div>>
           </div>
         </section>
         <!-- /contact -->
