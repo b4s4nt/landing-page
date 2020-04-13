@@ -1,11 +1,12 @@
+
+
+
+
 <?php
+
 if($_POST)
 {
-    $to_Email       = "toumail@domain.com"; //Replace with recipient email address
-    $subject        = 'You have new inquiry from '.$_POST["userName"]; //Subject line for emails
-       
-    
-    //check if its an ajax request, exit if not
+    // check if its an ajax request, exit if not
     if(!isset($_SERVER['HTTP_X_REQUESTED_WITH']) AND strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') {
     
         //exit script outputting json data
@@ -19,17 +20,17 @@ if($_POST)
     } 
 
     //check $_POST vars are set, exit if any missing
-    if(!isset($_POST["userName"]) || !isset($_POST["userEmail"]) || !isset($_POST["userPhone"]) || !isset($_POST["userMessage"]))
+    if(!isset($_POST["name"]) || !isset($_POST["email"]) || !isset($_POST["phone"]) || !isset($_POST["message"]))
     {
         $output = json_encode(array('type'=>'error', 'text' => 'Input fields are empty!'));
         die($output);
     }
 
     //Sanitize input data using PHP filter_var().
-    $user_Name        = filter_var($_POST["userName"], FILTER_SANITIZE_STRING);
-    $user_Email       = filter_var($_POST["userEmail"], FILTER_SANITIZE_EMAIL);
-    $user_Phone       = filter_var($_POST["userPhone"], FILTER_SANITIZE_STRING);
-    $user_Message     = filter_var($_POST["userMessage"], FILTER_SANITIZE_STRING);
+    $user_Name        = filter_var($_POST["name"], FILTER_SANITIZE_STRING);
+    $user_Email       = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
+    $user_Phone       = filter_var($_POST["phone"], FILTER_SANITIZE_STRING);
+    $user_Message     = filter_var($_POST["message"], FILTER_SANITIZE_STRING);
     
     //additional php validation
     if(strlen($user_Name)<4) // If length is less than 4 it will throw an HTTP error.
@@ -55,26 +56,62 @@ if($_POST)
     
     //proceed with PHP email.
 
-    /*
-    Incase your host only allows emails from local domain, 
-    you should un-comment the first line below, and remove the second header line. 
-    Of-course you need to enter your own email address here, which exists in your cp.
-    */
-    //$headers = 'From: your-name@YOUR-DOMAIN.COM' . "\r\n" .
-    $headers = 'From: '.$user_Email.'' . "\r\n" . //remove this line if line above this is un-commented
-    'Reply-To: '.$user_Email.'' . "\r\n" .
-    'X-Mailer: PHP/' . phpversion();
+    $result = "";
+    $error  = "";
+
     
-        // send mail
-    $sentMail = @mail($to_Email, $subject, $user_Message .'  -'.$user_Name, $headers);
+if(isset($user_Name))
+
+{
+    require 'phpmailer/PHPMailerAutoload.php';
+    $subject  = 'You have new inquiry from '.$user_Name; //Subject line for emails
+    $mail = new PHPMailer;
+   // $mail->SMTPDebug = 4; // this is debug script
     
-    if(!$sentMail)
+    //smtp settings
+    $mail->isSMTP(); // send as HTML
+    $mail->Host = "smtp.gmail.com"; // SMTP servers
+    $mail->SMTPAuth = true; // turn on SMTP authentication
+
+    $mail->Username = "bedp701@gmail.com"; // Company or email for hosting , this is just gmail made for tes 
+    $mail->Password = 'm3r03xtr4gm4!l@***'; // Your password mail, same email password for company email
+    $mail->Port = 587; //specify SMTP Port
+    
+    $mail->SMTPSecure = 'tls';                               
+    $mail->setFrom($user_Email,$user_Name);  //  email and  name of the person sending message
+    $mail->addAddress('liam@acordsoftware.tech'); //  email of reception. 
+    $mail->addCC('basantakandel10@gmail.com');// this is my email for testing , remove at the time of merging.
+    $mail->addReplyTo($user_Email,$user_Name); // to reply back
+    $mail->isHTML(true);
+    $mail -> Subject = 'You have new inquiry from '.$user_Name; //Subject line for email sender.
+   // $mail->Subject='Form Submission:' .$_POST['subject'];
+    $mail->Body='<h3> Sender Name :'.$user_Name.'<br>Sender Email: '.$user_Email.'<br>Sender Contact:'.$user_Phone.'</h3>'.'<br> <p>Message: '.$user_Message.'</p>';
+
+    if(!$mail->send())
+    
     {
-        $output = json_encode(array('type'=>'error', 'text' => 'Could not send mail! Please check your PHP mail configuration.'));
-        die($output);
-    }else{
-        $output = json_encode(array('type'=>'message', 'text' => 'Ah!! '.$user_Name .' your message has been submitted to us'));
-        die($output);
+        
+        $error = "Something went worng. Please try again.";
+        echo $error;
+        echo "Something went worng. Please try again.";
+        
+        
     }
+    else 
+    {
+        $result="Thanks\t" .$_POST['name']. " for contacting us.";
+        echo "Thanks\t" .$_POST['name']. " for contacting us." ;
+        $output = json_encode(array('type'=>'error', 'text' => 'Too short message! Please enter something.'));
+
+       
+    }
+
+
+    
 }
+
+
+}
+
+
 ?>

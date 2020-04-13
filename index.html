@@ -28,6 +28,8 @@
         <link rel="stylesheet" href="css/custom.css">
         <link rel="stylesheet" href="css/vendor/animate.css">
         <link rel="stylesheet" href="css/vendor/owl.carousel.css">
+        <!-- For contact form , csss-->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
         
 
         <!-- style switcher -->
@@ -52,6 +54,8 @@
         
         <script type="text/javascript" src="js/vendor/jquery-1.11.0.min.js"></script>        
         <script type="text/javascript" src="js/vendor/modernizr.custom.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
+
         <!--[if lt IE 9]>
             <script type="text/javascript" src="js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
         <![endif]-->
@@ -904,7 +908,7 @@
 
        
 
-        </section>
+      </section>
         <!-- /blog-->
 
         <!-- address -->
@@ -922,62 +926,103 @@
         </section>
         <!-- /address -->
 
-        <!-- contact -->
-        <section id="contact" class="row section">
-          <div id="container">
-            <div class="row">
-              <h2 class="section-title text-center">
-                <span class="section-title-border wow pulse" data-wow-duration="1s" data-wow-delay="1s">Get In Touch</span>
-              </h2>
-              <div class="section-info col-md-10 col-md-offset-1 text-center wow fadeInDown">
-                  <h3>We would love to hear from<strong> you.</strong></h3>
-                  <ul class="hr">
-                    <li class="hr-line"><span></span></li>
-                    <li class="hr-icon"><i class="icon_mail_alt"></i></li>
-                    <li class="hr-line"><span></span></li>
-                  </ul>
-                  <p>We welcome your inquiries at the email address below.We will get in touch with you soon.</p>
-              </div>            
-            </div>
+       <!-- contact -->
+       <section id="contact" class="row section">
+        <div id="container">
+          <div class="row">
+            <h2 class="section-title text-center">
+              <span class="section-title-border wow pulse" data-wow-duration="1s" data-wow-delay="1s">Get In Touch</span>
+            </h2>
+            <div class="section-info col-md-10 col-md-offset-1 text-center wow fadeInDown">
+                <h3>We would love to hear from<strong> you.</strong></h3>
+                <ul class="hr">
+                  <li class="hr-line"><span></span></li>
+                  <li class="hr-icon"><i class="icon_mail_alt"></i></li>
+                  <li class="hr-line"><span></span></li>
+                </ul>
+                <p>We welcome your inquiries at the email address below.We will get in touch with you soon.</p>
+            </div>            
+          </div>
 
-            <div class="row">            
-              <fieldset id="contactform" class="wow bounce" data-wow-duration="2s" data-wow-delay="0.5s">                
-                <div id="form_result"></div>
-                <div class="row">
-                  <div class="col-md-6 col-md-offset-3">
-                    <input name="name" type="text" id="name" class="form-control" placeholder="Full Name">
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-3 col-md-offset-3">
-                    <input name="email" type="text" id="email" class="form-control" value="" placeholder="Valid email ID">
-                  </div>                
-                  <div class="col-md-3">
-                    <input name="phone" type="text" id="phone" class="form-control" value="" placeholder="Contact No">
-                  </div>
-                </div>
-                <div class="row">         
-                  <div class="col-md-6 col-md-offset-3">
-                    <textarea name="message" cols="40" rows="5" id="comments" class="form-control" placeholder="Your Message"></textarea>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12 text-center">                    
-                      <button type="submit" class="btn btn-default btn-lg" id="submit">SUBMIT</button>
+          <!-- Container for  contact form-->
+          <div class= "container-fuid">
+          <!--Gap 4 column gap from left side-->
+           <div class ="col-lg-4">
+           </div>
+          <!--Form at center with size of 4 column -->
+          <div class="col-lg-4">
+            <div class="container-fluid">
+            <!-- <form  role="form" method="post" action="include/contact.php" > -->
+            <form  role="form"  >
+              <div class="form-group" >
+                <input class="form-control" placeholder=" Full Name" name="name" id= "name">
+              </div>
+              <div class="form-group">
+                <input  type ="email"class="form-control"  id ="email" placeholder=" Valid Email ID" name="email">
+              </div>
+              <div class="form-group" >
+                 <input  type ="text" class="form-control"  id ="phone"  placeholder=" Contact Number" name="phone">
+              </div>
+              <div class="form-group">
+                <textarea class="form-control"   id ="message" placeholder=" Your Message" rows="3" name="message"></textarea>
+              </div>
+              <div class="col text-center">
+                 <button type="submit"  name ='submit' id ="submit" class="btn btn-default">SUBMIT</button>
+                 <!--This is span for error and success message -->
+                 <span id="error_message" class="text-danger"></span>  
+                 <span id="success_message" class="text-success"></span>  
 
-                  </div>
-                </div>
-              </fieldset>
-              <!-- </form> -->
+              </div> 
+            </form>           
             </div>
           </div>
-        </section>
-        <!-- /contact -->
+            <!--Gap 4 column gap from right side-->
+          <div class="col-lg-4">
+          </div>
+          </div>
+        </div>
+      </section>
+      <!-- Adding  Extra Space-->
+      &nbsp;&nbsp;
+      <!--This is  script for ajax request , error and success message -->
+      <script>  
+        $(document).ready(function(){  
+             $('#submit').click(function(){  
+                  var name = $('#name').val();  
+                  var email = $('#email').val();  
+                  var phone = $('#phone').val();  
+                  var message = $('#message').val();
+                  if(name == '' || email == '' || phone == '' || message == '')  
+                  {  
+                       $('#error_message').html("All Fields are required");  
+                  }  
+                  else  
+                  {  
+                       $.ajax({  
+                            url:"include/contact.php",  
+                            method:"POST",  
+                            data:{name:name, message:message, phone:phone, email:email},  
+                            success:function(data){  
+                                 $("form").trigger("reset");   
+                                 $('#success_message').fadeIn().html(data);  
+                                 setTimeout(function(){  
+                                      $('#success_message').fadeOut("Slow");  
+                                 }, 2000);  
+                            }  
+                       });  
+                       
+                       
+                                 
+                  }   
+             });  
+        });  
+        </script>  
+      <!-- /contact -->
 
         <!-- google map 
         <section id="google-map" class="row section">
           <div id="map" data-lat="40.747688" data-lng="-74.004142"></div>
-        </section> 
+        </section> -->
         <!-- /google-map -->
 
         <!-- social -->
